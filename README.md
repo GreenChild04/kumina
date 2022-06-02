@@ -1,2 +1,3 @@
 # kumina
-Based off of TurtleShell
+Shell based off of Linux
+Long Term Project
