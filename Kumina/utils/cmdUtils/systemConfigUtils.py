@@ -15,7 +15,7 @@ class SystemConfigUtils:
 
     def systemPresetSet(self):
         systemPresets = {
-            "CMD_NAME": "Kumina",
+            "CMD_NAME": "kumina",
             "CMD_VERSION": "1.1",
             "CRYPT_PASS": "Kumina%%!**&@",
             "DIARY_LOC": "LOG",
