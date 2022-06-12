@@ -1,3 +1,4 @@
+import shutil
 from multiprocessing import Process, Queue, Pipe
 import convScript
 from pathlib import Path
@@ -15,6 +16,7 @@ class Excutor:
         self.getImport()
         req = RequestPackage(self, self.testImp.TestScript(), None)
         req.start()
+        shutil.rmtree("tmp")
 
     def getImport(self):
         loc = "scripta"
@@ -31,7 +33,7 @@ class Excutor:
         self.testFun = self.testImp.TestScript().run
 
     def testdata(self):
-        return "Hello Nerd"
+        return "uwu"
 
 
 Excutor().run()
