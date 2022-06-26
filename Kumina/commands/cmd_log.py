@@ -3,9 +3,52 @@ import sys
 from datetime import datetime, date
 from pathlib import Path
 from utils.cmdUtils.systemConfigUtils import SystemConfigUtils
+from utils.cmdUtils.CommandUtils import HelpMenu
+import pyaudio
+import wave
+import threading
+import time
+import subprocess
 
 
-class CmdDiary:
+class CmdLog:
+    def __init__(self):
+        self.cmdList = {
+            "help": LogHelp(),
+            "text": CmdTLog(),
+        }
+        self.details = [
+            "Used to create a help menu for the Log command",
+            "Used to write a text log",
+        ]
+
+    def run(self, interPackage):
+        if len(interPackage.cmdDir) > 0:
+            interPackage.cmdList = self.cmdList
+            interPackage.runCommands()
+        else:
+            self.cmdList["text"].run(interPackage)
+
+
+class CmdVLog:
+    def __init__(self):
+        self.fileLoc = self.fileLoc = os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC"), f"{TimeDate().asIndex()}; {f'{TimeDate().day} {TimeDate().month} {TimeDate().year}'} - {TimeDate().asDay()}.mp3")
+        self.pa = pyaudio.PyAudio()
+        self.frames = []
+        self.stream = self.pa.open(format=pyaudio.paInt16, channels=2, rate=44100, input=True, output=True, frames_per_buffer=1024)
+
+    def run(self, interPackage):
+        if interPackage.syntax:
+            self.record(interPackage.syntax[0])
+        else:
+            seconds = input("How long do you want to record for?: ")
+            self.record(seconds)
+
+    def record(self, sec):
+        pass
+
+
+class CmdTLog:
     def __init__(self):
         self.entry = ''
         self.finalText = ''
@@ -15,7 +58,7 @@ class CmdDiary:
         inpit = ""
         while True:
 
-            if os.path.exists(os.path.join(os.getcwd(), SystemConfigUtils().load("DIARY_LOC"))):
+            if os.path.exists(os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC"))):
                 inpit = FileRead().loadTemp()
 
             inpit = input(inpit)
@@ -31,7 +74,7 @@ class CmdDiary:
                 self.old()
             else:
                 self.new()
-            os.remove(os.path.join(os.getcwd(), SystemConfigUtils().load("DIARY_LOC"), '_temp_'))
+            os.remove(os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC"), '_temp_'))
             self.entry = ''
             self.finalText = ''
         else:
@@ -92,16 +135,16 @@ class CmdDiary:
 
 class FileRead:
     def __init__(self):
-        self.fileLoc = os.path.join(os.getcwd(), SystemConfigUtils().load("DIARY_LOC"), f"{TimeDate().asIndex()}; {f'{TimeDate().day} {TimeDate().month} {TimeDate().year}'} - {TimeDate().asDay()}.log")
+        self.fileLoc = os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC"), f"{TimeDate().asIndex()}; {f'{TimeDate().day} {TimeDate().month} {TimeDate().year}'} - {TimeDate().asDay()}.log")
 
     def checkFile(self):
         return os.path.isfile(self.fileLoc)
 
     def writeOnFile(self, data):
-        if not os.path.exists(os.path.join(os.getcwd(), SystemConfigUtils().load("DIARY_LOC"))):
-            os.makedirs(os.path.join(os.getcwd(), SystemConfigUtils().load("DIARY_LOC")))
+        if not os.path.exists(os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC"))):
+            os.makedirs(os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC")))
 
-        if os.path.exists(os.path.join(os.getcwd(), SystemConfigUtils().load("DIARY_LOC"))):
+        if os.path.exists(os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC"))):
             inpit = FileRead().loadTemp()
 
         if self.checkFile():
@@ -113,15 +156,15 @@ class FileRead:
 
     def storeTemp(self, data):
 
-        if not os.path.exists(os.path.join(os.getcwd(), SystemConfigUtils().load("DIARY_LOC"))):
-            os.makedirs(os.path.join(os.getcwd(), SystemConfigUtils().load("DIARY_LOC")))
+        if not os.path.exists(os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC"))):
+            os.makedirs(os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC")))
 
-        with open(os.path.join(os.getcwd(), SystemConfigUtils().load("DIARY_LOC"), '_temp_'), 'w') as file:
+        with open(os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC"), '_temp_'), 'w') as file:
             file.write(data)
 
     def loadTemp(self):
         try:
-            with Path(os.path.join(os.getcwd(), SystemConfigUtils().load("DIARY_LOC"), '_temp_')) as file:
+            with Path(os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC"), '_temp_')) as file:
                 return file.read_text()
         except:
             return ''
@@ -162,3 +205,6 @@ class TimeDate:
 
         return days[time]
 
+class LogHelp:
+    def run(self, interPackage):
+        HelpMenu("Log", CmdLog().cmdList, CmdLog().details).makeHelpMenu()

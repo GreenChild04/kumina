@@ -3,7 +3,7 @@ from utils.cmdUtils.systemConfigUtils import SystemConfigUtils
 from commands.calculator.cmd_cal import Calculator
 from commands.system.cmd_system import CmdSystem
 from commands.folder.cmd_folder import CmdFolder
-from commands.cmd_diary import CmdDiary
+from commands.cmd_log import CmdLog
 from commands.music.cmd_music import CmdMusic
 from commands.vex.cmd_vex import CmdVex
 from utils.cmdUtils.CommandUtils import HelpMenu
@@ -29,7 +29,7 @@ class Parser:
             'cal': Calculator(),
             "system": CmdSystem(),
             "file": CmdFolder(),
-            "log": CmdDiary(),
+            "log": CmdLog(),
             'music': CmdMusic(),
             "vex": CmdVex(),
             "stonks": CmdStonks(),

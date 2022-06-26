@@ -29,5 +29,6 @@ def process():
     Cmd_Main(user).run()
 
 
-process()
+if __name__ == "__main__":
+    process()
 # Process

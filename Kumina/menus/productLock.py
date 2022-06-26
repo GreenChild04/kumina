@@ -27,6 +27,7 @@ class ProductLock:
     def passwordEnter(self, username):
         inpit = getpass('Password: ')
         userKey = Cmd_UserKey(username)
+        isUserTrue = True
 
         try:
             if userKey.checkPassword(inpit):
@@ -38,7 +39,10 @@ class ProductLock:
                 self.passwordEnter(username)
         except:
             print('\n\nError: User not found')
-            self.userEnter()
+            getpass("Press enter to close")
+            shell = __import__("shell")
+            os.system("cls")
+            shell.process()
 
         if not userKey.checkKey():
             print('\n\nError: User Not Valid')
