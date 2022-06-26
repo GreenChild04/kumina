@@ -7,6 +7,7 @@ from commands.cmd_diary import CmdDiary
 from commands.music.cmd_music import CmdMusic
 from commands.vex.cmd_vex import CmdVex
 from utils.cmdUtils.CommandUtils import HelpMenu
+from commands.cmd_stonks import CmdStonks
 
 
 ##########################
@@ -31,6 +32,7 @@ class Parser:
             "log": CmdDiary(),
             'music': CmdMusic(),
             "vex": CmdVex(),
+            "stonks": CmdStonks(),
         }
 
         details = [
@@ -40,6 +42,7 @@ class Parser:
             "Used to write logs/diaries",
             "Used to play music",
             "Used to run commands utilities for vex",
+            "Used to trade stonks for the day",
         ]
 
         self.helpMenu(cmdList, details)
