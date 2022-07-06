@@ -25,7 +25,7 @@ def runCmd(username):
 def process():
     # fun.web.test.run()
     user = productLock.run()
-    runCmd(user)
+    #runCmd(user)
     Cmd_Main(user).run()
 
 

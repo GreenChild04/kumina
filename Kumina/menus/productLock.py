@@ -39,7 +39,7 @@ class ProductLock:
                 self.passwordEnter(username)
         except:
             print('\n\nError: User not found')
-            getpass("Press enter to close")
+            getpass("\nPress enter to try again")
             shell = __import__("shell")
             os.system("cls")
             shell.process()
