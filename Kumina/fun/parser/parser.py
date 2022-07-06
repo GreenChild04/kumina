@@ -8,6 +8,7 @@ from commands.music.cmd_music import CmdMusic
 from commands.vex.cmd_vex import CmdVex
 from utils.cmdUtils.CommandUtils import HelpMenu
 from commands.cmd_stonks import CmdStonks
+from commands.wifi.cmd_wifi import CmdWifi
 
 
 ##########################
@@ -33,6 +34,7 @@ class Parser:
             'music': CmdMusic(),
             "vex": CmdVex(),
             "stonks": CmdStonks(),
+            "wifi": CmdWifi(),
         }
 
         details = [
@@ -43,6 +45,7 @@ class Parser:
             "Used to play music",
             "Used to run commands utilities for vex",
             "Used to trade stonks for the day",
+            "Used to access utils for wifi connections",
         ]
 
         self.helpMenu(cmdList, details)

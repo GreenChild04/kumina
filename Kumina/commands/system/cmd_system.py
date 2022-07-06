@@ -43,7 +43,6 @@ class SystemReset:
 
 class SystemEdit:
     def run(self, interPackage):
-        print(SystemConfigUtils().load("CMD_NAME"))
         if interPackage.syntax:
             print(f"Editing the ({interPackage.syntax[0]}) Config...")
             self.edit(interPackage.syntax)

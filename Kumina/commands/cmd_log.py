@@ -4,7 +4,6 @@ from datetime import datetime, date
 from pathlib import Path
 from utils.cmdUtils.systemConfigUtils import SystemConfigUtils
 from utils.cmdUtils.CommandUtils import HelpMenu
-import pyaudio
 import wave
 import threading
 import time
@@ -28,24 +27,6 @@ class CmdLog:
             interPackage.runCommands()
         else:
             self.cmdList["text"].run(interPackage)
-
-
-class CmdVLog:
-    def __init__(self):
-        self.fileLoc = self.fileLoc = os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC"), f"{TimeDate().asIndex()}; {f'{TimeDate().day} {TimeDate().month} {TimeDate().year}'} - {TimeDate().asDay()}.mp3")
-        self.pa = pyaudio.PyAudio()
-        self.frames = []
-        self.stream = self.pa.open(format=pyaudio.paInt16, channels=2, rate=44100, input=True, output=True, frames_per_buffer=1024)
-
-    def run(self, interPackage):
-        if interPackage.syntax:
-            self.record(interPackage.syntax[0])
-        else:
-            seconds = input("How long do you want to record for?: ")
-            self.record(seconds)
-
-    def record(self, sec):
-        pass
 
 
 class CmdTLog:
