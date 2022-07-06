@@ -13,7 +13,7 @@ class Cmd_Main:
         os.system("cls")
         print(f'GreenChild {SystemConfigUtils().load("CMD_NAME")} [Version {SystemConfigUtils().load("CMD_VERSION")}]\n(c) GreenChild Corporation. All rights reserved.')
         while True:
-            inpit = input(f'\nT:\\Users\\{str(UserKeyUtils(self.user).load("USERNAME")).replace(" ", "_").upper()}>')
+            inpit = input(f'\nK:/user/{str(UserKeyUtils(self.user).load("USERNAME"))}>')
             print()
             parser = Parser(inpit, self.user)
             parser.run()

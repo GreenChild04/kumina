@@ -3,10 +3,12 @@ from utils.cmdUtils.systemConfigUtils import SystemConfigUtils
 from commands.calculator.cmd_cal import Calculator
 from commands.system.cmd_system import CmdSystem
 from commands.folder.cmd_folder import CmdFolder
-from commands.cmd_diary import CmdDiary
+from commands.cmd_log import CmdLog
 from commands.music.cmd_music import CmdMusic
 from commands.vex.cmd_vex import CmdVex
 from utils.cmdUtils.CommandUtils import HelpMenu
+from commands.cmd_stonks import CmdStonks
+from commands.wifi.cmd_wifi import CmdWifi
 
 
 ##########################
@@ -28,9 +30,11 @@ class Parser:
             'cal': Calculator(),
             "system": CmdSystem(),
             "file": CmdFolder(),
-            "log": CmdDiary(),
+            "log": CmdLog(),
             'music': CmdMusic(),
             "vex": CmdVex(),
+            "stonks": CmdStonks(),
+            "wifi": CmdWifi(),
         }
 
         details = [
@@ -40,6 +44,8 @@ class Parser:
             "Used to write logs/diaries",
             "Used to play music",
             "Used to run commands utilities for vex",
+            "Used to trade stonks for the day",
+            "Used to access utils for wifi connections",
         ]
 
         self.helpMenu(cmdList, details)
