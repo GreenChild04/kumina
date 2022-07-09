@@ -1,4 +1,4 @@
-import time, winwifi
+import time
 from utils.cmdUtils.CommandUtils import HelpMenu
 from commands.wifi.cmd_wifiCrack import CmdCrack
 
@@ -39,7 +39,6 @@ class CmdCheck:
 
 class CmdConnect:
     def __init__(self):
-        self.wifi = __import__("winwifi")
         self.url = __import__("urllib")
 
     def run(self, interPackage):
