@@ -24,6 +24,8 @@ class Parser:
         tokens, error = Lexer(self.text).run()
         if error:
             print(error.asString())
+        if Interpreter(tokens).checkToken(TT_UDR, tokens):
+            return True
         inter = Interpreter(tokens).run()
 
         cmdList = {
@@ -52,6 +54,8 @@ class Parser:
 
         interPackage = InterPackage(cmdList, inter[0], self.user, inter[1])
         interPackage.runCommands()
+
+        return False
 
     def helpMenu(self, cmdList, details):
         cmdList["help"] = HelpMenu(SystemConfigUtils().load("CMD_NAME"), cmdList, details)
@@ -178,6 +182,9 @@ class Lexer:
             elif self.currentChar == '.':
                 tokens.append(Token(TT_DOT))
                 self.advance()
+            elif self.currentChar == "#":
+                tokens.append(Token(TT_UDR))
+                self.advance()
             else:
                 char = self.currentChar
                 self.advance()
@@ -234,6 +241,7 @@ TT_INT = 'INT'
 TT_FLOAT = 'FLOAT'
 TT_FUN = 'FUN'
 TT_STR = "STR"
+TT_UDR = "UDR"
 
 
 class Token:
