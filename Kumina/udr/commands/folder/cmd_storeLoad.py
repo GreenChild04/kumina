@@ -18,6 +18,7 @@ class CmdStore:
             "-d: sets the saving method for a folder/directory instead of a file",
             "-",
             "file.save: \"filename\" \"file location\"",
+            "file.save: -d \"filename\" \"file location\""
             "file.save: -h",
         ])
 
@@ -62,7 +63,7 @@ class CmdLoad:
             if interPackage.checkSwitch("h") or interPackage.checkSwitch("help"):
                 self.hm.makeHelpInfo()
             else:
-                self.fileLoad(interPackage.syntax[0])
+                self.fileLoad(interPackage.inpit[0])
         else:
             self.hm.makeHelpInfo()
 
