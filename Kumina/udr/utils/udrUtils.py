@@ -54,10 +54,12 @@ class HelpMenu:
 
     def makeHelpInfo(self):
         currentIndex = -1
-        print("*Help Menu*")
+
+        print("\t*Help Menu*")
         print(f"How to use the {self.menuName} command:\n")
 
-        print("    Switches:#")
+        print("    Switches:")
+        print(f"\t-h & --help: creates help menu for this command")
         for i in self.helpInfo:
             currentIndex += 1
             if i != "-":
@@ -69,9 +71,9 @@ class HelpMenu:
         print()
 
         print("    Example:")
-        print(f"\texample: [{self.helpInfo[currentIndex]}]")
-
-        print()
+        examples = self.helpInfo[currentIndex:]
+        for i in examples:
+            print(f"\texample: [{i}]")
 
     def run(self, interPackage):
         self.makeHelpMenu()

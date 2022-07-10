@@ -1,20 +1,24 @@
 from udr.utils.udrUtils import HelpMenu
+import os
 
 
-class CmdPrint:
+class CmdOs:
     def __init__(self):
-        self.hm = HelpMenu("print", {}, [], [
+        self.hm = HelpMenu("os", {}, [], [
+            "-h: creates help menu",
             "-",
-            "print: \"stuff you want to print\"",
-            "print: -h",
+            "os: \"commands you want to run\"",
+            "os: -h",
         ])
 
     def run(self, interPackage):
         if interPackage.isColon:
             if interPackage.checkSwitch("h") or interPackage.checkSwitch("help"):
                 self.hm.makeHelpInfo()
-            else:
+            try:
                 for i in interPackage.inpit:
-                    print(i)
+                    os.system(i)
+            except:
+                print("Execution Failed")
         else:
             self.hm.makeHelpInfo()

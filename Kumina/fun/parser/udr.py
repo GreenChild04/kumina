@@ -3,6 +3,8 @@ from utils.cmdUtils.systemConfigUtils import SystemConfigUtils
 from udr.utils.udrUtils import HelpMenu
 
 from udr.commands.print import CmdPrint
+from udr.commands.os import CmdOs
+from udr.commands.folder.cmd_folder import CmdFolder
 
 
 ##########################
@@ -22,10 +24,14 @@ class UdrParser:
 
         cmdList = {
             "print": CmdPrint(),
+            "os": CmdOs(),
+            "file": CmdFolder(),
         }
 
         details = [
             "Used to print a specified message",
+            "Used to run specified commands in os terminal",
+            "Used to run all utilizes concerning files",
         ]
 
         self.helpMenu(cmdList, details)
