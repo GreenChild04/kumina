@@ -5,6 +5,7 @@ from udr.utils.udrUtils import HelpMenu
 from udr.commands.print import CmdPrint
 from udr.commands.os import CmdOs
 from udr.commands.folder.cmd_folder import CmdFolder
+from udr.commands.wifi.cmd_wifi import CmdWifi
 
 
 ##########################
@@ -26,12 +27,14 @@ class UdrParser:
             "print": CmdPrint(),
             "os": CmdOs(),
             "file": CmdFolder(),
+            "wifi": CmdWifi(),
         }
 
         details = [
             "Used to print a specified message",
             "Used to run specified commands in os terminal",
             "Used to run all utilizes concerning files",
+            "Used to run wifi based commands (highly experimental)",
         ]
 
         self.helpMenu(cmdList, details)
@@ -99,10 +102,14 @@ class Interpreter:
 
     def findSwitches(self, colonSides):
         output = []
+        dic = {}
         for i in colonSides[1]:
             if self.getTokenType(i) == TT_SCH:
                 output.append(self.getTokenValue(i))
-        return output
+
+        for i in output:
+            dic[i[0]] = i[1]
+        return dic
 
     def dotParser(self, tokenList):
         activeTokens = self.tokenSplit(TT_DOT, tokenList)
@@ -158,7 +165,7 @@ class Lexer:
                 tokens.append(self.makeCharacters())
             elif self.currentChar == "-":
                 tokens.append(self.makeSwitch())
-            elif self.currentChar == '"':
+            elif self.currentChar == '"' or self.currentChar == "'":
                 tokens.append(self.makeText())
             elif self.currentChar == ':' or self.currentChar == ";":
                 tokens.append(Token(TT_COL))
@@ -214,16 +221,27 @@ class Lexer:
         return Token(TT_STR, charText)
 
     def makeSwitch(self):
-        switchVal = ""
+        switchVal = [None, None]
 
         self.advance()
 
         if self.currentChar == "-":
             self.advance()
-            switchVal = self.makeCharacters().asValue()
+            switchVal[0] = self.makeCharacters().asValue()
         else:
-            switchVal = self.currentChar
+            switchVal[0] = self.currentChar
             self.advance()
+
+        if self.currentChar == "/":
+            self.advance()
+            if self.currentChar == '"':
+                switchVal[1] = self.makeText().asValue()
+            elif self.currentChar in CHARACTERS:
+                switchVal[1] = self.makeCharacters().asValue()
+            elif self.currentChar in DIGITS:
+                switchVal[1] = self.makeNumbers().asValue()
+            else:
+                "Error: That is not a friggin input char"
 
         return Token(TT_SCH, switchVal)
 

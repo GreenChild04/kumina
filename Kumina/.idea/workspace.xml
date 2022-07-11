@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f58391c-d046-4428-802e-5807dfcc897d" name="Changes" comment="" />
+    <list default="true" id="7f58391c-d046-4428-802e-5807dfcc897d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Kumina.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Kumina.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fun/parser/udr.py" beforeDir="false" afterPath="$PROJECT_DIR$/fun/parser/udr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udr/commands/folder/cmd_folder.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/folder/cmd_folder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udr/commands/folder/cmd_storeLoad.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/folder/cmd_storeLoad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udr/commands/os.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/os.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udr/commands/print.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/print.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udr/commands/wifi/cmd_wifi.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/wifi/cmd_wifi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udr/utils/udrUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/utils/udrUtils.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +26,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

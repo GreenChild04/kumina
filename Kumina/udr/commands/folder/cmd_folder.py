@@ -1,5 +1,5 @@
 from utils.cmdUtils.CommandUtils import InterPackage
-from utils.cmdUtils.CommandUtils import HelpMenu
+from udr.utils.udrUtils import HelpMenu
 from udr.commands.folder.cmd_storeLoad import CmdStore
 from udr.commands.folder.cmd_storeLoad import CmdLoad
 from udr.commands.folder.cmd_storeLoad import CmdCheck
@@ -33,12 +33,21 @@ class CmdFolder:
             "Used to open the directory",
         ]
 
+        self.hm = HelpMenu("file", {}, [], [
+            "-",
+            "file",
+            "file: -h",
+        ])
+
     def run(self, interPackage):
         if len(interPackage.cmdDir) > 0:
             interPackage.cmdList = self.cmdList
             interPackage.runCommands()
         else:
-            FolderHelp().run(interPackage)
+            if interPackage.isColon and interPackage.checkSwitch("h"):
+                self.hm.makeHelpInfo()
+            else:
+                FolderHelp().run(interPackage)
 
 
 class FolderHelp:

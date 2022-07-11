@@ -9,7 +9,7 @@ class InterPackage:
     user: str
     isColon: bool
     inpit: list = None
-    switch: list = None
+    switch: dict = None
 
     def runCommands(self):
         cmd = None
@@ -33,12 +33,27 @@ class InterPackage:
                 return True
         return False
 
+    def getValue(self, switch, index):
+        if self.checkSwitch(switch) and self.switch[switch]:
+            return self.switch[switch]
+        else:
+            try:
+                return self.inpit[index]
+            except:
+                return None
+
+    def isSwitchValue(self, switch):
+        if self.switch[switch] is not None:
+            return True
+        else:
+            return False
+
 
 @dataclass()
 class HelpMenu:
     menuName: str
-    commands: dict
-    details: list
+    commands: dict = None
+    details: list = None
     helpInfo: list = None
 
     def makeHelpMenu(self):

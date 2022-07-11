@@ -5,7 +5,7 @@ import os
 class CmdOs:
     def __init__(self):
         self.hm = HelpMenu("os", {}, [], [
-            "-h: creates help menu",
+            "-c: sets the command you want to run",
             "-",
             "os: \"commands you want to run\"",
             "os: -h",
@@ -16,8 +16,7 @@ class CmdOs:
             if interPackage.checkSwitch("h") or interPackage.checkSwitch("help"):
                 self.hm.makeHelpInfo()
             try:
-                for i in interPackage.inpit:
-                    os.system(i)
+                os.system(interPackage.getValue("c", 0))
             except:
                 print("Execution Failed")
         else:

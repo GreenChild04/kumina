@@ -1,5 +1,5 @@
 import time
-from utils.cmdUtils.CommandUtils import HelpMenu
+from udr.utils.udrUtils import HelpMenu
 from commands.wifi.cmd_wifiCrack import CmdCrack
 
 
@@ -19,22 +19,40 @@ class CmdWifi:
             "Used to connect to a wifi connection",
         ]
 
+        self.hm = HelpMenu("wifi", helpInfo=[
+            "-",
+            "wifi",
+            "wifi: -h"
+        ])
+
     def run(self, interPackage):
         if len(interPackage.cmdDir) > 0:
             interPackage.cmdList = self.cmdList
             interPackage.runCommands()
         else:
-            self.cmdList["help"].run(interPackage)
+            if interPackage.isColon and interPackage.checkSwitch("h"):
+                self.hm.makeHelpInfo()
+            else:
+                self.cmdList["help"].run(interPackage)
 
 
 class CmdCheck:
     def __init__(self):
         self.sub = __import__("subprocess")
+        self.hm = HelpMenu("check", helpInfo=[
+            "-",
+            "wifi.check",
+            "wifi.check: -h",
+        ])
 
     def run(self, interPackage):
-        nts = self.sub.check_output(["netsh", "wlan", "show", "network"])
-        dnts = nts.decode("ascii")
-        print(dnts)
+        if interPackage.isColon:
+            if interPackage.checkSwitch("h"):
+                self.hm.makeHelpInfo()
+        else:
+            nts = self.sub.check_output(["netsh", "wlan", "show", "network"])
+            dnts = nts.decode("ascii")
+            print(dnts)
 
 
 class CmdConnect:
