@@ -32,8 +32,11 @@ class InterPackage:
             if i == switch:
                 return True
         return False
+    
+    def isColon(self):
+        return self.isColon
 
-    def getValue(self, switch, index):
+    def getValue(self, switch, index=0):
         if self.checkSwitch(switch) and self.switch[switch]:
             return self.switch[switch]
         else:

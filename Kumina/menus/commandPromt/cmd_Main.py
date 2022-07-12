@@ -28,4 +28,4 @@ class Cmd_Main:
                 inpit = input(f'\n{str(UserKeyUtils(self.user).load("USERNAME"))}@kumina:~# ')
                 print()
                 parser = UdrParser(inpit, self.user)
-                parser.run()
+                self.isUDR = parser.run()

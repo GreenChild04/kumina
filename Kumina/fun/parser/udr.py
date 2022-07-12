@@ -6,6 +6,7 @@ from udr.commands.print import CmdPrint
 from udr.commands.os import CmdOs
 from udr.commands.folder.cmd_folder import CmdFolder
 from udr.commands.wifi.cmd_wifi import CmdWifi
+from udr.commands.system.cmd_system import CmdSystem
 
 
 ##########################
@@ -28,6 +29,7 @@ class UdrParser:
             "os": CmdOs(),
             "file": CmdFolder(),
             "wifi": CmdWifi(),
+            "system": CmdSystem(),
         }
 
         details = [
@@ -41,6 +43,8 @@ class UdrParser:
 
         interPackage = InterPackage(cmdList, inter[0], self.user, inter[3], inter[1], inter[2])
         interPackage.runCommands()
+
+        return True
 
     def helpMenu(self, cmdList, details):
         cmdList["help"] = HelpMenu(SystemConfigUtils().load("CMD_NAME"), cmdList, details)

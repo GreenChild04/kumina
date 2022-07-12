@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f58391c-d046-4428-802e-5807dfcc897d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Kumina.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Kumina.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fun/parser/udr.py" beforeDir="false" afterPath="$PROJECT_DIR$/fun/parser/udr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udr/commands/folder/cmd_folder.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/folder/cmd_folder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menus/commandPromt/cmd_Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/menus/commandPromt/cmd_Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/udr/commands/folder/cmd_storeLoad.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/folder/cmd_storeLoad.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udr/commands/os.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/os.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udr/commands/print.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/print.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udr/commands/wifi/cmd_wifi.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/wifi/cmd_wifi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udr/commands/system/cmd_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/system/cmd_system.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/udr/utils/udrUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/utils/udrUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/cmdUtils/systemConfigUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/cmdUtils/systemConfigUtils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +51,34 @@
       <recent name="D:\Ethan\Home\Github\kumina\Kumina\udr\commands" />
       <recent name="D:\Ethan\Home\Github\kumina\Kumina\udr" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="shell" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Kumina" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shell.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.shell" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

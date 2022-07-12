@@ -238,7 +238,7 @@ class CmdOpen:
         ])
 
     def run(self, interPackage):
-        if interPackage.isColon() and interPackage.checkSwitch("h"):
+        if interPackage.isColon and interPackage.checkSwitch("h"):
             self.hm.makeHelpInfo()
         else:
             subprocess.run([self.exPath, self.path])
