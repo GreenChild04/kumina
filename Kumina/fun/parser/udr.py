@@ -22,6 +22,8 @@ class UdrParser:
         tokens, error = Lexer(self.text).run()
         if error:
             print(error.asString())
+        if Interpreter(tokens).checkToken(TT_UDR, tokens):
+            return False
         inter = Interpreter(tokens).run()
 
         cmdList = {
@@ -37,6 +39,7 @@ class UdrParser:
             "Used to run specified commands in os terminal",
             "Used to run all utilizes concerning files",
             "Used to run wifi based commands (highly experimental)",
+            "USed to run all system commands",
         ]
 
         self.helpMenu(cmdList, details)
@@ -174,7 +177,7 @@ class Lexer:
             elif self.currentChar == ':' or self.currentChar == ";":
                 tokens.append(Token(TT_COL))
                 self.advance()
-            elif self.currentChar == '#':
+            elif self.currentChar == '#' or self.currentChar == ">":
                 tokens.append(Token(TT_UDR))
                 self.advance()
             elif self.currentChar == '.':

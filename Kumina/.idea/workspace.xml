@@ -2,13 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f58391c-d046-4428-802e-5807dfcc897d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/menus/commandPromt/cmd_udr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Kumina.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Kumina.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Music/Dating Start!.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Music/Gone Away.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Music/I See a Dreamer.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Music/I'm Something Else.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Music/Injustice.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Music/Life By The Sea (feat. CG5).mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Music/Minecraft OST - Pigstep (FlyxTheKid Remix).mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Music/Tommy Innit.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Music/Turn Back Time - Derivakat [Dream SMP original song].mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Music/Undertale - Megalovania (Oscar Santos Remix).mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Music/Vibrant Eyes.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Music/Your New Boyfriend.mp3" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/fun/parser/udr.py" beforeDir="false" afterPath="$PROJECT_DIR$/fun/parser/udr.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menus/commandPromt/cmd_Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/menus/commandPromt/cmd_Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udr/commands/folder/cmd_storeLoad.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/folder/cmd_storeLoad.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udr/commands/system/cmd_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/system/cmd_system.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shell.py" beforeDir="false" afterPath="$PROJECT_DIR$/shell.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/udr/utils/udrUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/utils/udrUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/None/password" beforeDir="false" afterPath="$PROJECT_DIR$/user/None/password" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/None/salt" beforeDir="false" afterPath="$PROJECT_DIR$/user/None/salt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/None/system.config" beforeDir="false" afterPath="$PROJECT_DIR$/user/None/system.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/None/user.key" beforeDir="false" afterPath="$PROJECT_DIR$/user/None/user.key" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/cmdUtils/systemConfigUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/cmdUtils/systemConfigUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/Wifi Cracking/wifi con.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test/Wifi Cracking/wifi con.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +61,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/udr/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/menus/commandPromt" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Ethan\Home\Github\kumina\Kumina\menus\commandPromt" />
       <recent name="D:\Ethan\Home\Github\kumina\Kumina\udr\utils" />
       <recent name="D:\Ethan\Home\Github\kumina\Kumina\udr\commands" />
       <recent name="D:\Ethan\Home\Github\kumina\Kumina\udr" />
@@ -90,5 +109,16 @@
       <updated>1657329897366</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

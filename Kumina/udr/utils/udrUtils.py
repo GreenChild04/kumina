@@ -32,7 +32,7 @@ class InterPackage:
             if i == switch:
                 return True
         return False
-    
+
     def isColon(self):
         return self.isColon
 

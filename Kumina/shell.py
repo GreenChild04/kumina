@@ -1,6 +1,8 @@
 from menus.productLock import ProductLock
 from menus.commandPromt.cmd_Main import Cmd_Main
 from utils.cmdUtils.systemConfigUtils import SystemConfigUtils
+from utils.cmdUtils.userKeyUtils import UserKeyUtils
+from menus.commandPromt.cmd_udr import Cmd_Udr
 import fun.web.test
 
 # Init
@@ -26,7 +28,10 @@ def process():
     # fun.web.test.run()
     user = productLock.run()
     #runCmd(user)
-    Cmd_Main(user).run()
+    if UserKeyUtils(user).load("HACK_PERM") == "Green":
+        Cmd_Udr(user).run()
+    else:
+        Cmd_Main(user).run()
 
 
 if __name__ == "__main__":
