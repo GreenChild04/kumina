@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7f58391c-d046-4428-802e-5807dfcc897d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../0Kumina/.idea/Kumina.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/calculator/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/calculator/cmd_add.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/calculator/cmd_average.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/calculator/cmd_cal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/calculator/cmd_calCal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/calculator/cmd_hcfLcm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/calculator/cmd_multiply.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/calculator/cmd_primeFactors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/calculator/cmd_ratioSplit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/calculator/cmd_subtract.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/calculator/cmd_template.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/calculator/string_with_arrows.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/cmd_log.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/cmd_stonks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/cmd_userKey.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/folder/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/folder/cmd_folder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/folder/cmd_storeLoad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/music/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/music/cmd_music.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/system/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/system/cmd_system.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/system/cmd_update.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/vex/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/vex/cmd_vex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/vex/code/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/vex/code/cmd_code.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/vex/code/cmd_saveLoad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/wifi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/wifi/cmd_wifi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/commands/wifi/cmd_wifiCrack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/fun/Script/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/fun/Script/high.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/fun/Script/string_with_arrows.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/fun/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/fun/parser/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/fun/parser/orderOfOps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/fun/parser/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/fun/parser/udr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/fun/web/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/fun/web/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/menus/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/menus/commandPromt/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/menus/commandPromt/cmd_Main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/menus/commandPromt/cmd_udr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/menus/productLock.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/DLLs/libcrypto-1_1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/DLLs/libffi-7.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/DLLs/libssl-1_1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/DLLs/py.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/DLLs/pyc.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/DLLs/pyd.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/DLLs/python_lib.cat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/DLLs/python_tools.cat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/DLLs/sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/NEWS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/clear_comtypes_cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/hikari.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/mid3cp.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/mid3iconv.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/mid3v2.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/moggsplit.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/mss.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/mutagen-inspect.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/mutagen-pony.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/normalizer.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/pip.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/pip3.10.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/pip3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/pytube.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/pywin32_postinstall.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/pywin32_testall.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/tqdm.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/wifi-script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Scripts/wifi.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/demo/beer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/demo/eiffel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/demo/hanoi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/demo/life.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/demo/markov.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/demo/mcast.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/demo/queens.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/demo/redemo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/demo/rpython.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/demo/rpythond.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/demo/sortvisu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/demo/spreadsheet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/demo/vector.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/i18n/makelocalealias.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/i18n/msgfmt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/i18n/pygettext.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/ChipViewer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/ColorDB.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/DetailsViewer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/ListViewer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/Main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/PyncheWidget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/StripViewer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/Switchboard.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/TextViewer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/TypeinViewer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/X/rgb.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/X/xlicense.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/html40colors.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/namedcolors.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/pyColorChooser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/pynche.pyw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/webcolors.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/pynche/websafe.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/2to3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/abitype.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/analyze_dxp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/byext.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/byteyears.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/checkpip.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/cleanfuture.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/combinerefs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/copytime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/crlf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/db2pickle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/diff.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/dutree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/eptags.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/find-uname.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/find_recursionlimit.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/finddiv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/findlinksto.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/findnocoding.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/fixcid.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/fixdiv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/fixheader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/fixnotice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/fixps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/generate_opcode_h.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/generate_stdlib_module_names.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/generate_token.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/get-remote-certificate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/google.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/gprof2html.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/highlight.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/ifdef.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/import_diagnostics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/lfcr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/linktree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/lll.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/mailerdaemon.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/make_ctype.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/md5sum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/mkreal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/ndiff.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/nm2def.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/objgraph.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/parse_html5_entities.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/parseentities.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/patchcheck.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/pathfix.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/pdeps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/pep384_macrocheck.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/pickle2db.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/pindent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/ptags.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/pydoc3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/pysource.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/reindent-rst.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/reindent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/rgrep.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/run_tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/serve.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/smelly.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/stable_abi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/suff.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/texi2html.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/untabify.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/update_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/var_access_benchmark.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/which.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/Tools/scripts/win_add2path.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/Python.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/abstract.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/bltinmodule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/boolobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/bytearrayobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/bytesobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cellobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/ceval.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/classobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/code.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/codecs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/compile.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/complexobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/context.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/abstract.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/bytearrayobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/bytesobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/ceval.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/code.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/compile.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/dictobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/fileobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/fileutils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/frameobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/import.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/initconfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/interpreteridobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/listobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/methodobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/object.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/objimpl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/odictobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/picklebufobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/pyctype.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/pydebug.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/pyerrors.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/pyfpe.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/pylifecycle.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/pymem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/pystate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/pythonrun.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/pytime.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/sysmodule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/traceback.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/tupleobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/cpython/unicodeobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/datetime.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/descrobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/dictobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/dynamic_annotations.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/enumobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/errcode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/eval.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/exports.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/fileobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/fileutils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/floatobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/frameobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/funcobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/genericaliasobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/genobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/import.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_abstract.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_accu.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_asdl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_ast.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_ast_state.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_atomic.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_atomic_funcs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_bitutils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_blocks_output_buffer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_bytes_methods.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_call.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_ceval.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_code.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_compile.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_condvar.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_context.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_dtoa.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_fileutils.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_format.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_gc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_getopt.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_gil.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_hamt.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_hashtable.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_import.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_initconfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_interp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_list.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_long.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_moduleobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_object.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_parser.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_pathconfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_pyarena.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_pyerrors.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_pyhash.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_pylifecycle.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_pymem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_pystate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_runtime.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_structseq.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_symtable.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_sysmodule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_traceback.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_tuple.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_ucnhash.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_unionobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/internal/pycore_warnings.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/interpreteridobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/intrcheck.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/iterobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/listobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/longintrepr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/longobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/marshal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/memoryobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/methodobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/modsupport.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/moduleobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/namespaceobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/object.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/objimpl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/opcode.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/osdefs.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/osmodule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/patchlevel.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/py_curses.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pycapsule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pyconfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pydtrace.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pyerrors.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pyexpat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pyframe.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pyhash.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pylifecycle.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pymacconfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pymacro.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pymath.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pymem.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pyport.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pystate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pystrcmp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pystrhex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pystrtod.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pythonrun.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/pythread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/rangeobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/setobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/sliceobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/structmember.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/structseq.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/sysmodule.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/token.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/traceback.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/tracemalloc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/tupleobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/typeslots.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/unicodeobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/warnings.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/include/weakrefobject.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/libs/python3.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/libs/python310.lib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/python-3.10.4-amd64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/python.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/python3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/python310.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/pythonw.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/share/man/man1/mid3cp.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/share/man/man1/mid3iconv.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/share/man/man1/mid3v2.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/share/man/man1/moggsplit.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/share/man/man1/mutagen-inspect.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/share/man/man1/mutagen-pony.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/vcruntime140.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/piss/vcruntime140_1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/pypi.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/shell.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/cmd_log.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/cmd_stonks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/folder/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/folder/cmd_folder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/folder/cmd_storeLoad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/music/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/music/cmd_music.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/os.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/print.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/system/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/system/cmd_system.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/system/cmd_update.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/vex/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/vex/cmd_vex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/vex/code/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/vex/code/cmd_code.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/vex/code/cmd_saveLoad.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/wifi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/wifi/cmd_wifi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/commands/wifi/cmd_wifiCrack.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/udrLock/Encryption.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/udrLock/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/udrLock/count.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/udrLock/udrLock.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/udrLock/udrLock.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/utils/folderUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/udr/utils/udrUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/utils/cmdUtils/CommandUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/utils/cmdUtils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/utils/cmdUtils/folderUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/utils/cmdUtils/stonksUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/utils/cmdUtils/systemConfigUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/utils/cmdUtils/userKeyUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/utils/cmdUtils/vexUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/utils/menuUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/utils/tond/CMD_dataCheck.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/utils/tond/CMD_dataLoad_V2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/utils/tond/CMD_dataSave_V2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/utils/tond/Encryption.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/utils/tond/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/utils/tond/data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0Kumina/utils/tond/dataUtils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../current/kumina.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../current/user/GreenChild/folder/Music" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../current/user/GreenChild/folder/diary" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../current/user/GreenChild/password" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../current/user/GreenChild/salt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../current/user/GreenChild/user.key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../current/user/None/password" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../current/user/None/salt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../current/user/None/system.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../current/user/None/user.key" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2BgZs460jzBNmzNAzTtZinKyVDM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Ethan\Home\Github\kumina\Kumina\menus\commandPromt" />
+      <recent name="D:\Ethan\Home\Github\kumina\Kumina\udr\utils" />
+      <recent name="D:\Ethan\Home\Github\kumina\Kumina\udr\commands" />
+      <recent name="D:\Ethan\Home\Github\kumina\Kumina\udr" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="shell" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Kumina" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shell.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.shell" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f58391c-d046-4428-802e-5807dfcc897d" name="Changes" comment="" />
+      <created>1657329897366</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657329897366</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -43,13 +43,19 @@ class Cmd_UserKey:
         except:
             pass
 
+        try:
+            with Path("activation.iac") as file:
+                self.pog["INA"] = file.read_text()
+            os.remove("activation.iac")
+        except:
+            pass
+
         print()
 
         self.ask('Full Name', 'NAME')
         self.ask('Age', 'AGE')
         self.ask('Address', 'ADDRESS')
         self.ask("Email", "EMAIL")
-        self.ask("Activation For INA (Ignore if not applies)", "INA")
         print()
         self.ask('Username', "USERNAME")
         self.createPassword('Password', "Confirm")
