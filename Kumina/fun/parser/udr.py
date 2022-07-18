@@ -7,6 +7,7 @@ from udr.commands.os import CmdOs
 from udr.commands.folder.cmd_folder import CmdFolder
 from udr.commands.wifi.cmd_wifi import CmdWifi
 from udr.commands.system.cmd_system import CmdSystem
+from udr.commands.elite.cmd_elite import CmdElite
 
 
 ##########################
@@ -32,6 +33,7 @@ class UdrParser:
             "file": CmdFolder(),
             "wifi": CmdWifi(),
             "system": CmdSystem(),
+            "elite": CmdElite(),
         }
 
         details = [
@@ -39,7 +41,8 @@ class UdrParser:
             "Used to run specified commands in os terminal",
             "Used to run all utilizes concerning files",
             "Used to run wifi based commands (highly experimental)",
-            "USed to run all system commands",
+            "Used to run all system commands",
+            "Used to run commands made for Elite80",
         ]
 
         self.helpMenu(cmdList, details)

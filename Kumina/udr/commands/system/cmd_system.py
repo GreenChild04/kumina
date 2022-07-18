@@ -68,6 +68,7 @@ class SystemEdit:
             "-",
             "system.edit: \"name of setting\" \"new value\"",
             "system.edit: -s/\"name of setting\" -v/\"new value\"",
+            "system.edit: -h",
         ])
         if interPackage.isColon:
             if interPackage.checkSwitch("h"):

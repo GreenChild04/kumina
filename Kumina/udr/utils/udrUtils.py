@@ -28,9 +28,12 @@ class InterPackage:
             print(f'(Error) Invalid Syntax: Command \'{self.cmdDir[0]}\' not found')
 
     def checkSwitch(self, switch):
-        for i in self.switch:
-            if i == switch:
-                return True
+        try:
+            for i in self.switch:
+                if i == switch:
+                    return True
+        except:
+            return False
         return False
 
     def isColon(self):
@@ -46,9 +49,12 @@ class InterPackage:
                 return None
 
     def isSwitchValue(self, switch):
-        if self.switch[switch] is not None:
-            return True
-        else:
+        try:
+            if self.switch[switch] is not None:
+                return True
+            else:
+                return False
+        except:
             return False
 
 

@@ -5,6 +5,7 @@ from utils.cmdUtils.userKeyUtils import UserKeyUtils
 from menus.commandPromt.cmd_udr import Cmd_Udr
 from udr.udrLock.udrLock import UdrLock
 import fun.web.test
+import os
 
 # Init
 productLock = ProductLock()
@@ -26,6 +27,10 @@ def runCmd(username):
 
 # Process
 def process():
+    try:
+        os.system("cls")
+    except:
+        os.system("clear")
     # fun.web.test.run()
     user = productLock.run()
     #runCmd(user)
