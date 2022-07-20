@@ -2,37 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f58391c-d046-4428-802e-5807dfcc897d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/piss/Scripts/estimator_ckpt_converter.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/piss/Scripts/f2py.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/piss/Scripts/google-oauthlib-tool.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/piss/Scripts/import_pb_to_tensorboard.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/piss/Scripts/markdown_py.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/piss/Scripts/pyrsa-decrypt.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/piss/Scripts/pyrsa-encrypt.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/piss/Scripts/pyrsa-keygen.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/piss/Scripts/pyrsa-priv2pub.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/piss/Scripts/pyrsa-sign.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/piss/Scripts/pyrsa-verify.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/piss/Scripts/saved_model_cli.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/piss/Scripts/tensorboard.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/piss/Scripts/tf_upgrade_v2.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/piss/Scripts/tflite_convert.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/piss/Scripts/toco.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/piss/Scripts/toco_from_protos.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/piss/Scripts/wheel.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udr/commands/elite/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udr/commands/elite/cmd_elite.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udr/commands/elite/cmdaidea.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fun/parser/udr.py" beforeDir="false" afterPath="$PROJECT_DIR$/fun/parser/udr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/piss/Scripts/pip.exe" beforeDir="false" afterPath="$PROJECT_DIR$/piss/Scripts/pip.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/piss/Scripts/pip3.10.exe" beforeDir="false" afterPath="$PROJECT_DIR$/piss/Scripts/pip3.10.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/piss/Scripts/pip3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/piss/Scripts/pip3.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shell.py" beforeDir="false" afterPath="$PROJECT_DIR$/shell.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udr/commands/system/cmd_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/system/cmd_system.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udr/utils/udrUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/utils/udrUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/user/None/system.config" beforeDir="false" afterPath="$PROJECT_DIR$/../kurrent/user/None/system.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../user/None/system.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/udr/commands/elite/cmdaidea.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/elite/cmdaidea.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kurrent/storygen.py" beforeDir="false" afterPath="$PROJECT_DIR$/../kurrent/storygen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kurrent/stuff.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

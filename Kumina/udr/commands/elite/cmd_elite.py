@@ -1,5 +1,5 @@
 from udr.utils.udrUtils import HelpMenu
-from udr.commands.elite.cmdaidea import CmdAidea
+#from udr.commands.elite.cmdaidea import CmdAidea
 
 
 class CmdElite:
@@ -11,11 +11,11 @@ class CmdElite:
         ])
         self.cmdList = {
             "help": EliteHelp(),
-            "aidea": CmdAidea(),
+            #"aidea": CmdAidea(),
         }
         self.details = [
             "Used to create a help menu for the elite command",
-            "Used to make youtube ideas using an ai"
+            #"Used to make youtube ideas using an ai"
         ]
 
     def run(self, interPackage):
