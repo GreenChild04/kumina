@@ -3,7 +3,7 @@ import sys
 from datetime import datetime, date
 from pathlib import Path
 from utils.cmdUtils.systemConfigUtils import SystemConfigUtils
-from utils.cmdUtils.CommandUtils import HelpMenu
+from udr.utils.udrUtils import HelpMenu
 import wave
 import threading
 import time
@@ -20,31 +20,61 @@ class CmdLog:
             "Used to create a help menu for the Log command",
             "Used to write a text log",
         ]
+        self.hm = HelpMenu("log", {}, [], [
+            "-",
+            "log",
+            "log: -h",
+        ])
 
     def run(self, interPackage):
         if len(interPackage.cmdDir) > 0:
             interPackage.cmdList = self.cmdList
             interPackage.runCommands()
         else:
-            self.cmdList["text"].run(interPackage)
+            if interPackage.isColon and interPackage.checkSwitch("h"):
+                self.hm.makeHelpInfo()
+            else:
+                self.cmdList["text"].run(interPackage)
 
 
 class CmdTLog:
     def __init__(self):
         self.entry = ''
         self.finalText = ''
+        self.hm = HelpMenu("text", helpInfo=[
+            "-",
+            "log",
+            "log.text",
+            "log.text: -h",
+            "log: -h",
+        ])
 
     def run(self, interPackage):
-        os.system("cls")
-        inpit = ""
-        while True:
+        if interPackage.isColon:
+            if interPackage.checkSwitch("h") or interPackage.checkSwitch("help"):
+                self.hm.makeHelpInfo()
+            else:
+                os.system("cls")
+                inpit = ""
+                while True:
 
-            if os.path.exists(os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC"))):
-                inpit = FileRead().loadTemp()
+                    if os.path.exists(os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC"))):
+                        inpit = FileRead().loadTemp()
 
-            inpit = input(inpit)
-            self.mainFun(inpit)
+                    inpit = input(inpit)
+                    self.mainFun(inpit)
+                    os.system("cls")
+        else:
             os.system("cls")
+            inpit = ""
+            while True:
+
+                if os.path.exists(os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC"))):
+                    inpit = FileRead().loadTemp()
+
+                inpit = input(inpit)
+                self.mainFun(inpit)
+                os.system("cls")
 
     def mainFun(self, entry):
         self.entry = entry
@@ -116,7 +146,7 @@ class CmdTLog:
 
 class FileRead:
     def __init__(self):
-        self.fileLoc = os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC"), f"{TimeDate().asIndex()}; {f'{TimeDate().day} {TimeDate().month} {TimeDate().year}'} - {TimeDate().asDay()}.log")
+        self.fileLoc = os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC"), f"{TimeDate().asIndex()}; {f'{TimeDate().day} {TimeDate().month} {TimeDate().year}'} - {TimeDate().asDay()}.{SystemConfigUtils().load('LOG_EXT')}")
 
     def checkFile(self):
         return os.path.isfile(self.fileLoc)
