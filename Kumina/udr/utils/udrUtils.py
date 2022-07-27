@@ -148,9 +148,7 @@ class Dict3:
 
 
 def clear():
-    try:
-        out = subprocess.check_output("cls")
-        if subprocess.check_output("cls") != "":
-            os.system("clear")
-    except:
+    if os.name == 'nt':
+        os.system("cls")
+    else:
         os.system("clear")
