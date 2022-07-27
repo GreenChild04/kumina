@@ -2,37 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f58391c-d046-4428-802e-5807dfcc897d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Kumina.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Kumina.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menus/commandPromt/cmd_Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/menus/commandPromt/cmd_Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menus/commandPromt/cmd_udr.py" beforeDir="false" afterPath="$PROJECT_DIR$/menus/commandPromt/cmd_udr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menus/productLock.py" beforeDir="false" afterPath="$PROJECT_DIR$/menus/productLock.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shell.py" beforeDir="false" afterPath="$PROJECT_DIR$/shell.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udr/commands/cmd_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/cmd_log.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udr/utils/udrUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/utils/udrUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udr/udrScript.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/udrScript.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/cmdUtils/systemConfigUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/cmdUtils/systemConfigUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Elite_AI_Ideas/25.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Elite_AI_Ideas/five.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Elite_AI_Ideas/fivety.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Elite_AI_Ideas/one.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Elite_AI_Ideas/onety.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Elite_AI_Ideas/storygen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Elite_AI_Ideas/titles.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Elite_AI_Ideas/youtuber.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Music/Dating Start!.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Music/Gone Away.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Music/I See a Dreamer.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Music/I'm Something Else.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Music/Injustice.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Music/Life By The Sea (feat. CG5).mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Music/Minecraft OST - Pigstep (FlyxTheKid Remix).mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Music/Tommy Innit.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Music/Turn Back Time - Derivakat [Dream SMP original song].mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Music/Undertale - Megalovania (Oscar Santos Remix).mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Music/Vibrant Eyes.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Music/Your New Boyfriend.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/kumina.lnk" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

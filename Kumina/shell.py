@@ -5,38 +5,29 @@ from utils.cmdUtils.userKeyUtils import UserKeyUtils
 from menus.commandPromt.cmd_udr import Cmd_Udr
 from udr.udrLock.udrLock import UdrLock
 from udr.utils.udrUtils import clear
+from udr.udrScript import UdrScript
+from sys import *
 import fun.web.test
 import os
 import subprocess
 
 # Init
 productLock = ProductLock()
-
-
-def runCmd(username):
-    try:
-        Cmd_Main(username).run()
-    except Exception as error:
-        print(error)
-        print(f"\nCRITICAL: {SystemConfigUtils().load('CMD_NAME')} HAS CRASHED")
-
-        input('')
-        runCmd(username)
-
-
 # Init
 
 
 # Process
 def process():
     clear()
-    # fun.web.test.run()
-    user, password = productLock.run()
-    #runCmd(user)
-    if UdrLock().isActRight(UserKeyUtils(user).load("INA")):
-        Cmd_Udr(user, password).run()
-    else:
-        Cmd_Main(user, password).run()
+    try:
+        a = argv[1]
+        UdrScript(a).run()
+    except:
+        user, password = productLock.run()
+        if UdrLock().isActRight(UserKeyUtils(user).load("INA")):
+            Cmd_Udr(user, password).run()
+        else:
+            Cmd_Main(user, password).run()
 
 
 if __name__ == "__main__":
