@@ -1,5 +1,7 @@
 import sys
 from dataclasses import dataclass
+import os
+import subprocess
 
 
 @dataclass()
@@ -143,3 +145,12 @@ class Dict3:
             finalDict[a] = [value1, value2]
 
         return finalDict
+
+
+def clear():
+    try:
+        out = subprocess.check_output("cls")
+        if subprocess.check_output("cls") != "":
+            os.system("clear")
+    except:
+        os.system("clear")

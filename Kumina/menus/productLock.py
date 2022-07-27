@@ -7,6 +7,7 @@ from utils.tond.dataUtils import DATA_UTILS
 from utils.cmdUtils.userKeyUtils import UserKeyUtils
 from utils.cmdUtils.systemConfigUtils import SystemConfigUtils
 from getpass import getpass
+from udr.utils.udrUtils import clear
 
 
 class ProductLock:
@@ -32,7 +33,7 @@ class ProductLock:
             if userKey.checkPassword(inpit):
                 print('\nLogin Successful!')
                 time.sleep(1.8)
-                os.system('cls')
+                clear()
             else:
                 print('\n\nError: Password incorrect')
                 inpit = self.passwordEnter(username)
@@ -40,7 +41,7 @@ class ProductLock:
             print('\n\nError: User not found')
             getpass("\nPress enter to try again")
             shell = __import__("shell")
-            os.system("cls")
+            clear()
             shell.process()
 
         if not userKey.checkKey():

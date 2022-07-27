@@ -4,6 +4,7 @@ from utils.cmdUtils.systemConfigUtils import SystemConfigUtils
 from fun.parser.udr import UdrParser
 from menus.commandPromt.cmd_Main import Cmd_Main
 from utils.cmdUtils.userKeyUtils import UserKeyUtils
+from udr.utils.udrUtils import clear
 import os
 import sys
 
@@ -15,10 +16,7 @@ class Cmd_Udr:
         self.isUDR = False
 
     def run(self):
-        try:
-            os.system("cls")
-        except:
-            os.system("clear")
+        clear()
         udr = SystemConfigUtils().load("CMD_NAME")[3:]
         print(f'GreenChild {udr} [Version {SystemConfigUtils().load("CMD_VERSION")}]\n(c) GreenChild Corporation. All rights reserved.')
         while True:

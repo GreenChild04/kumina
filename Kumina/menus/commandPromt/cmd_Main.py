@@ -4,6 +4,7 @@ from fun.parser.parser import Parser
 from utils.cmdUtils.systemConfigUtils import SystemConfigUtils
 from utils.cmdUtils.userKeyUtils import UserKeyUtils
 from udr.udrLock.udrLock import UdrLock
+from udr.utils.udrUtils import clear
 import sys
 import os
 
@@ -15,10 +16,7 @@ class Cmd_Main:
         self.isUDR = False
 
     def run(self):
-        try:
-            os.system("cls")
-        except:
-            os.system("clear")
+        clear()
         print(f'GreenChild {SystemConfigUtils().load("CMD_NAME")[:3]} [Version {SystemConfigUtils().load("CMD_VERSION")}]\n(c) GreenChild Corporation. All rights reserved.')
         while True:
             inpit = input(f'\nK:/user/{str(UserKeyUtils(self.user).load("USERNAME"))}>')

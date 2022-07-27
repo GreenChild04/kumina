@@ -4,6 +4,7 @@ from datetime import datetime, date
 from pathlib import Path
 from utils.cmdUtils.systemConfigUtils import SystemConfigUtils
 from udr.utils.udrUtils import HelpMenu
+from udr.utils.udrUtils import clear
 import wave
 import threading
 import time
@@ -54,7 +55,7 @@ class CmdTLog:
             if interPackage.checkSwitch("h") or interPackage.checkSwitch("help"):
                 self.hm.makeHelpInfo()
             else:
-                os.system("cls")
+                clear()
                 inpit = ""
                 while True:
 
@@ -63,9 +64,9 @@ class CmdTLog:
 
                     inpit = input(inpit)
                     self.mainFun(inpit)
-                    os.system("cls")
+                    clear()
         else:
-            os.system("cls")
+            clear()
             inpit = ""
             while True:
 
@@ -74,7 +75,7 @@ class CmdTLog:
 
                 inpit = input(inpit)
                 self.mainFun(inpit)
-                os.system("cls")
+                clear()
 
     def mainFun(self, entry):
         self.entry = entry
