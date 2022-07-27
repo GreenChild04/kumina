@@ -9,8 +9,9 @@ import os
 
 
 class Cmd_Main:
-    def __init__(self, user):
+    def __init__(self, user, pwd):
         self.user = user
+        self.pwd = pwd
         self.isUDR = False
 
     def run(self):
@@ -26,5 +27,5 @@ class Cmd_Main:
             self.isUDR = parser.run()
             if self.isUDR and UdrLock().isActRight(UserKeyUtils(self.user).load("INA")):
                 Cmd_Udr = __import__("menus.commandPromt.cmd_udr")
-                Cmd_Udr.commandPromt.cmd_udr.Cmd_Udr(self.user).run()
+                Cmd_Udr.commandPromt.cmd_udr.Cmd_Udr(self.user, self.pwd).run()
                 sys.exit()

@@ -1,4 +1,3 @@
-import readchar
 import sys
 import time
 import os
@@ -36,7 +35,7 @@ class ProductLock:
                 os.system('cls')
             else:
                 print('\n\nError: Password incorrect')
-                self.passwordEnter(username)
+                inpit = self.passwordEnter(username)
         except:
             print('\n\nError: User not found')
             getpass("\nPress enter to try again")
@@ -48,10 +47,12 @@ class ProductLock:
             print('\n\nError: User Not Valid')
             self.passwordEnter(username)
 
+        return inpit
+
     def userEnter(self):
         inpit = input("\nUsername: ")
         if inpit == 'CREATE_KEY':
             Cmd_UserKey(None).createKey()
             sys.exit()
-        self.passwordEnter(inpit)
-        return inpit
+        inpot = self.passwordEnter(inpit)
+        return inpit, inpot

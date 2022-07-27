@@ -32,12 +32,12 @@ def process():
     except:
         os.system("clear")
     # fun.web.test.run()
-    user = productLock.run()
+    user, password = productLock.run()
     #runCmd(user)
     if UdrLock().isActRight(UserKeyUtils(user).load("INA")):
-        Cmd_Udr(user).run()
+        Cmd_Udr(user, password).run()
     else:
-        Cmd_Main(user).run()
+        Cmd_Main(user, password).run()
 
 
 if __name__ == "__main__":

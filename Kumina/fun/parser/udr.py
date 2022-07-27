@@ -16,9 +16,10 @@ from udr.commands.cmd_log import CmdLog
 ##########################
 
 class UdrParser:
-    def __init__(self, text, user):
+    def __init__(self, text, user, pwd):
         self.text = text
         self.user = user
+        self.pwd = pwd
 
     def run(self):
         tokens, error = Lexer(self.text).run()
@@ -50,7 +51,7 @@ class UdrParser:
 
         self.helpMenu(cmdList, details)
 
-        interPackage = InterPackage(cmdList, inter[0], self.user, inter[3], inter[1], inter[2])
+        interPackage = InterPackage(cmdList, inter[0], self.user, inter[3], inter[1], inter[2], pwd=self.pwd)
         interPackage.runCommands()
 
         return True

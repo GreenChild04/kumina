@@ -22,7 +22,7 @@ class FolderUtils:
 
     def getDirName(self):
         dir = os.getcwd()
-        dirName = os.path.join(dir, 'user', str(self.user), 'folder')
+        dirName = os.path.join(dir, 'user', str(self.user), 'dir')
         return dirName
 
     def save(self, loc, obj, password):

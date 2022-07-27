@@ -1,4 +1,4 @@
-from utils.cmdUtils.folderUtils import FolderUtils
+from udr.utils.folderUtils import FolderUtils
 from utils.cmdUtils.userKeyUtils import UserKeyUtils
 from udr.utils.folderUtils import fileObject
 from udr.utils.udrUtils import HelpMenu
@@ -35,21 +35,21 @@ class CmdStore:
                 if not interPackage.checkSwitch("n") or not interPackage.checkSwitch("f"):
                     syntax = interPackage.inpit
                     peopleLoc = syntax.pop(0)
-                    self.fileStore(syntax, peopleLoc, interPackage.checkSwitch("d"))
+                    self.fileStore(syntax, peopleLoc, interPackage.checkSwitch("d"), interPackage.pwd)
                 elif interPackage.checkSwitch("n") and interPackage.checkSwitch("f"):
                     loc = interPackage.getValue("n", "")
                     files = interPackage.getValue("f", "")
-                    self.fileStore([files], loc, interPackage.checkSwitch("d"))
+                    self.fileStore([files], loc, interPackage.checkSwitch("d"), interPackage.pwd)
         else:
             self.hm.makeHelpInfo()
 
-    def fileStore(self, loc, peopleLoc, isFile):
+    def fileStore(self, loc, peopleLoc, isFile, pwd):
         try:
             file = fileObject()
 
             file.save(loc, isFile)
 
-            self.fu.save(peopleLoc, file, self.uku.loadActivation())
+            self.fu.save(peopleLoc, file, f"{self.uku.loadActivation()}`{pwd}")
         except Exception:
             print(f"ERROR: FILE '{loc}' NOT FOUND")
 
@@ -73,13 +73,13 @@ class CmdLoad:
             if interPackage.checkSwitch("h") or interPackage.checkSwitch("help"):
                 self.hm.makeHelpInfo()
             else:
-                self.fileLoad(interPackage.getValue("n", 0))
+                self.fileLoad(interPackage.getValue("n", 0), interPackage)
         else:
             self.hm.makeHelpInfo()
 
-    def fileLoad(self, loc):
+    def fileLoad(self, loc, inter):
         try:
-            pikkled = self.fu.load(loc, self.uku.loadActivation())
+            pikkled = self.fu.load(loc, f"{self.uku.loadActivation()}`{inter.pwd}")
             pikkled.load()
         except Exception as error:
             print(f"ERROR: FILE '{loc}' DOES NOT EXIST")
@@ -176,15 +176,15 @@ class CmdEject:
             if interPackage.checkSwitch("h"):
                 self.hm.makeHelpInfo()
             else:
-                self.ejectFile(interPackage.getValue("n", 0), interPackage.getValue("p", 1))
+                self.ejectFile(interPackage.getValue("n", 0), interPackage.getValue("p", 1), interPackage)
         else:
             self.hm.makeHelpInfo()
 
-    def ejectFile(self, files, pwd):
+    def ejectFile(self, files, pwd, inter):
         print("Ejecting Files...")
         try:
             print(f"\n-ejecting [{files}]")
-            self.fu.jSave(files, self.uku.loadActivation(), pwd)
+            self.fu.jSave(files, f"{self.uku.loadActivation()}`{inter.pwd}", pwd)
 
 
         except: pass
@@ -214,15 +214,15 @@ class CmdInject:
             if interPackage.checkSwitch("h"):
                 self.hm.makeHelpInfo()
             else:
-                self.injectFile(interPackage.getValue("n", 0), interPackage.getValue("p", 1))
+                self.injectFile(interPackage.getValue("n", 0), interPackage.getValue("p", 1), interPackage)
         else:
             self.hm.makeHelpInfo()
 
-    def injectFile(self, files, pwd):
+    def injectFile(self, files, pwd, inter):
         print("Injecting Files...")
         try:
             print(f"-injecting [{files}]")
-            self.fu.jLoad(files, pwd, self.uku.loadActivation())
+            self.fu.jLoad(files, pwd, f"{self.uku.loadActivation()}`{inter.pwd}")
         except: pass
         print("Done!")
 

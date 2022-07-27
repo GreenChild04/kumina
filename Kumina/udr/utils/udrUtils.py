@@ -10,6 +10,7 @@ class InterPackage:
     isColon: bool
     inpit: list = None
     switch: dict = None
+    pwd: str = None
 
     def runCommands(self):
         cmd = None

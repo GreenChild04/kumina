@@ -9,8 +9,9 @@ import sys
 
 
 class Cmd_Udr:
-    def __init__(self, user):
+    def __init__(self, user, pwd):
         self.user = user
+        self.pwd = pwd
         self.isUDR = False
 
     def run(self):
@@ -23,9 +24,9 @@ class Cmd_Udr:
         while True:
             inpit = input(f'\n{str(UserKeyUtils(self.user).load("USERNAME"))}@kumina:~# ')
             print()
-            parser = UdrParser(inpit, self.user)
+            parser = UdrParser(inpit, self.user, self.pwd)
             self.isUDR = parser.run()
             if not self.isUDR:
-                Cmd_Main(self.user).run()
+                Cmd_Main(self.user, self.pwd).run()
                 sys.exit()
 
