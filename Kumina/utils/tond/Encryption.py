@@ -27,10 +27,13 @@ def getKeyFromCustomPass(password_provided):
     return key
 
 
-def encryptData(msg, passwordProv):
-    try:
-        encoded = str(msg).encode()
-    except:
+def encryptData(msg, passwordProv, isByte=False):
+    if not isByte:
+        try:
+            encoded = str(msg).encode()
+        except:
+            encoded = msg
+    else:
         encoded = msg
 
     f = Fernet(getKeyFromCustomPass(passwordProv))
@@ -38,7 +41,7 @@ def encryptData(msg, passwordProv):
     return encrypted
 
 
-def decryptData(passwordProv, encrypted):
+def decryptData(passwordProv, encrypted, isByte=False):
     if encrypted[0] == 'b':
         new_encrypted = encrypted[1:]
         new_encrypted = new_encrypted.replace("'", '')
@@ -57,4 +60,7 @@ def decryptData(passwordProv, encrypted):
     except:
         print("\nERROR: ENCRYPTION PASSWORD NOT CORRECT\n")
 
-    return decrypted.decode()
+    if not isByte:
+        return decrypted.decode()
+    else:
+        return decrypted

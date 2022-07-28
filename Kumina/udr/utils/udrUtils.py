@@ -152,3 +152,17 @@ def clear():
         os.system("cls")
     else:
         os.system("clear")
+
+
+class Mini_Commands:
+    def __init__(self, command):
+        self.command = command
+
+    def run(self, interPackage):
+        if self.command == "clear":
+            clear()
+        elif self.command == "pause":
+            if os.name == 'nt':
+                os.system("PAUSE")
+            else:
+                os.system('read -s -n 1 -p "Press any key to continue . . ."')

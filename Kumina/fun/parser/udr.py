@@ -9,6 +9,7 @@ from udr.commands.wifi.cmd_wifi import CmdWifi
 from udr.commands.system.cmd_system import CmdSystem
 from udr.commands.elite.cmd_elite import CmdElite
 from udr.commands.cmd_log import CmdLog
+from udr.utils.udrUtils import Mini_Commands
 
 
 ##########################
@@ -36,7 +37,9 @@ class UdrParser:
             "wifi": CmdWifi(),
             "system": CmdSystem(),
             "elite": CmdElite(),
-            "log": CmdLog()
+            "log": CmdLog(),
+            "clear": Mini_Commands("clear"),
+            "pause": Mini_Commands("pause"),
         }
 
         details = [
@@ -47,6 +50,7 @@ class UdrParser:
             "Used to run all system commands",
             "Used to run commands made for Elite80",
             "Used to write log entries",
+            "Clears the screen",
         ]
 
         self.helpMenu(cmdList, details)

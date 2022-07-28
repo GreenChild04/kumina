@@ -12,8 +12,12 @@
       <sourceFolder url="file://$MODULE_DIR$/wpis/Lib/site-packages/pythonwin" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/wpis/Lib/site-packages/win32" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/wpis/Lib/site-packages/win32/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/wpis" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/wpis/DLLs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/wpis/Lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/wpis/Lib/site-packages" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.10 (Kumina)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.10" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">
