@@ -57,13 +57,14 @@ class CmdTLog:
             else:
                 clear()
                 inpit = ""
-                while True:
+                s = False
+                while not s:
 
                     if os.path.exists(os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC"))):
                         inpit = FileRead().loadTemp()
 
                     inpit = input(inpit)
-                    self.mainFun(inpit)
+                    s = self.mainFun(inpit)
                     clear()
         else:
             clear()
@@ -89,6 +90,7 @@ class CmdTLog:
             os.remove(os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC"), '_temp_'))
             self.entry = ''
             self.finalText = ''
+            return True
         else:
             self.conJ()
 
