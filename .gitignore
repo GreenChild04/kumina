@@ -128,3 +128,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 test/Wifi Cracking/passwords.pwd
+*.xml
+Kumina/.idea/workspace.xml
+*.xml
+*.iml
