@@ -51,6 +51,7 @@ class UdrParser:
             "Used to run commands made for Elite80",
             "Used to write log entries",
             "Clears the screen",
+            "Pauses the program",
         ]
 
         self.helpMenu(cmdList, details)
