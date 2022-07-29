@@ -75,7 +75,8 @@ class CmdTLog:
                     inpit = FileRead().loadTemp()
 
                 inpit = input(inpit)
-                self.mainFun(inpit)
+                if self.mainFun(inpit) == "no":
+                    break
                 clear()
 
     def mainFun(self, entry):
@@ -90,7 +91,7 @@ class CmdTLog:
             os.remove(os.path.join(os.getcwd(), SystemConfigUtils().load("LOG_LOC"), '_temp_'))
             self.entry = ''
             self.finalText = ''
-            return True
+            return "no"
         else:
             self.conJ()
 
