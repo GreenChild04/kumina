@@ -165,4 +165,4 @@ class Mini_Commands:
             if os.name == 'nt':
                 os.system("PAUSE")
             else:
-                os.system("read -s -k $'?Press any key to continue...'")
+                os.system("read 'pog'")
