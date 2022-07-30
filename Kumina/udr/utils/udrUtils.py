@@ -2,6 +2,7 @@ import sys
 from dataclasses import dataclass
 import os
 import subprocess
+import base64
 
 
 @dataclass()
@@ -75,9 +76,47 @@ class HelpMenu:
         print(f'Welcome to the help menu for the {self.menuName} command!')
         print('Here is a list of commands you can use!\n')
 
+        chars = [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            'a',
+            'b',
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z",
+        ]
+
         for i in self.commands:
             a += 1
-            print(f'{a + 1}. <this>.{i}: {self.details[a]}')
+            print(f'[{chars[a + 1]}] <this>.{i}: {self.details[a]}')
 
     def makeHelpInfo(self):
         currentIndex = -1
@@ -86,7 +125,7 @@ class HelpMenu:
         print(f"How to use the {self.menuName} command:\n")
 
         print("    Switches:")
-        print(f"\t-h & --help: creates help menu for this command")
+        print(f"\t-h: creates help menu for this command")
         for i in self.helpInfo:
             currentIndex += 1
             if i != "-":
@@ -159,10 +198,17 @@ class Mini_Commands:
         self.command = command
 
     def run(self, interPackage):
-        if self.command == "clear":
-            clear()
-        elif self.command == "pause":
-            if os.name == 'nt':
-                os.system("PAUSE")
-            else:
-                os.system("read 'pog'")
+        if interPackage.checkSwitch("h"):
+            HelpMenu(self.command, helpInfo=[
+                "-",
+                self.command,
+                f"{self.command}: -h",
+            ]).makeHelpInfo()
+        else:
+            if self.command == "clear":
+                clear()
+            elif self.command == "pause":
+                if os.name == 'nt':
+                    os.system("PAUSE")
+                else:
+                    os.system("read 'pog'")

@@ -7,6 +7,7 @@ from mutagen.mp3 import MP3
 from utils.cmdUtils.systemConfigUtils import SystemConfigUtils
 from playsound import playsound
 from pytube import Playlist
+from udr.utils.udrUtils import HelpMenu
 
 
 class CmdMusic:
@@ -23,13 +24,21 @@ class CmdMusic:
             "Used to autoplay music files",
             "Used to download music off of youtube",
         ]
+        self.hm = HelpMenu("music", helpInfo=[
+            "-",
+            "music",
+            "music.help",
+        ])
 
     def run(self, interPackage):
         if len(interPackage.cmdDir) > 0:
             interPackage.cmdList = self.cmdList
             interPackage.runCommands()
         else:
-            MusicHelp().run(interPackage)
+            if interPackage.checkSwitch("h"):
+                self.hm.makeHelpInfo()
+            else:
+                MusicHelp().run(interPackage)
 
 
 class MusicHelp:
@@ -40,28 +49,36 @@ class MusicHelp:
 class CmdAuto:
     def __init__(self):
         self.dirName = self.getDirName()
+        self.hm = HelpMenu("auto", helpInfo=[
+            "-",
+            "music.auto",
+            "music.auto: -h",
+        ])
 
     def run(self, interPackage):
-        while True:
-            songs = os.listdir(self.dirName)
-            shuffled = songs
-            random.shuffle(shuffled)
-            print("Songs up next:")
-            for i in shuffled:
-                print(f"\t[{i}]")
-            print()
+        if interPackage.checkSwitch("h"):
+            self.hm.makeHelpInfo()
+        else:
+            while True:
+                songs = os.listdir(self.dirName)
+                shuffled = songs
+                random.shuffle(shuffled)
+                print("Songs up next:")
+                for i in shuffled:
+                    print(f"\t[{i}]")
+                print()
 
-            for i in shuffled:
-                try:
-                    print(f'Playing: [{i}]', end='\r')
-                    song = os.path.join(self.dirName, i)
-                    playsound(os.path.join(self.getDirName(), i))
-                    message = f"Playing: [{i}]"
-                    spaces = ' ' * (100 - len(message))
-                    print(f"{message}{spaces}", end='\r')
-                except:
-                    pass
-            print()
+                for i in shuffled:
+                    try:
+                        print(f'Playing: [{i}]', end='\r')
+                        song = os.path.join(self.dirName, i)
+                        playsound(os.path.join(self.getDirName(), i))
+                        message = f"Playing: [{i}]"
+                        spaces = ' ' * (100 - len(message))
+                        print(f"{message}{spaces}", end='\r')
+                    except:
+                        pass
+                print()
 
     def getDirName(self):
         paths = os.path.join(os.getcwd(), str(SystemConfigUtils().load("MUSIC_LOC")))
@@ -71,15 +88,14 @@ class CmdAuto:
 class CmdPlay:
     def __init__(self):
         self.dirName = self.getDirName()
+        self.hm = HelpMenu("play", helpInfo=[
+            "-"
+        ])
 
     def run(self, interPackage):
-        if interPackage.syntax:
-            webbrowser.open(os.path.join(self.getDirName(), interPackage.syntax[0]))
-        else:
-            print("Write down the song you want to play")
-            inpit = input('>')
-            print(f'Playing: [{inpit}]')
-            webbrowser.open(os.path.join(self.getDirName(), inpit))
+        if interPackage.checkSwitch("h"):
+            pass
+        webbrowser.open(os.path.join(self.getDirName(), interPackage.syntax[0]))
 
     def getDirName(self):
         paths = os.path.join(os.getcwd(), SystemConfigUtils().load("MUSIC_LOC"))

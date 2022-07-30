@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f58391c-d046-4428-802e-5807dfcc897d" name="Changes" comment="" />
+    <list default="true" id="7f58391c-d046-4428-802e-5807dfcc897d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../kurrent/Music/7 Years.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kurrent/Music/High Hopes.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Home.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kurrent/Music/I Hear a Symphony.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Im Something Else.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Injustice.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Life By The Sea (feat CG5).mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kurrent/Music/My Ordinary Life.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Numb Little Bug.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Riptide.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Tommy Innit.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Undertale Remixed ▸ Spider Dance ▸ Holder Remix.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Undertale.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Worlds Smallest Violin.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Your New Boyfriend.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udr/commands/music/cmd_music.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/music/cmd_music.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udr/utils/udrUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/utils/udrUtils.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
