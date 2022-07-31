@@ -2,24 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f58391c-d046-4428-802e-5807dfcc897d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../kurrent/Music/7 Years.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kurrent/Music/High Hopes.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Home.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kurrent/Music/I Hear a Symphony.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Im Something Else.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Injustice.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Life By The Sea (feat CG5).mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kurrent/Music/My Ordinary Life.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Numb Little Bug.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Riptide.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Tommy Innit.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Undertale Remixed ▸ Spider Dance ▸ Holder Remix.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Undertale.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Worlds Smallest Violin.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kurrent/Music/Your New Boyfriend.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kurrent/user/Fireponye/dir/Diary" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kurrent/user/Fireponye/password" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kurrent/user/Fireponye/salt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kurrent/user/Fireponye/user.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Kumina.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Kumina.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fun/parser/udr.py" beforeDir="false" afterPath="$PROJECT_DIR$/fun/parser/udr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udr/commands/folder/cmd_folder.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/folder/cmd_folder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/udr/commands/music/cmd_music.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/music/cmd_music.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udr/utils/udrUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/utils/udrUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udr/iac gen.bat" beforeDir="false" afterPath="$PROJECT_DIR$/udr/iac gen.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/cmdUtils/systemConfigUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/cmdUtils/systemConfigUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kurrent/Music/My Ordinary Life.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kurrent/Music/Undertale Remixed ▸ Spider Dance ▸ Holder Remix.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kurrent/diary.cdn" beforeDir="false" afterPath="$PROJECT_DIR$/../kurrent/Ethan - Diary.cdn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kurrent/user/GreenChild/dir/Diary" beforeDir="false" afterPath="$PROJECT_DIR$/../kurrent/user/GreenChild/dir/Diary" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kurrent/user/GreenChild/dir/Music" beforeDir="false" afterPath="$PROJECT_DIR$/../kurrent/user/GreenChild/dir/Music" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kurrent/user/None/system.config" beforeDir="false" afterPath="$PROJECT_DIR$/../kurrent/user/None/system.config" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

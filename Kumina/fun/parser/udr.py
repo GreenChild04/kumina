@@ -9,6 +9,7 @@ from udr.commands.wifi.cmd_wifi import CmdWifi
 from udr.commands.system.cmd_system import CmdSystem
 from udr.commands.elite.cmd_elite import CmdElite
 from udr.commands.cmd_log import CmdLog
+from udr.commands.music.cmd_music import CmdMusic
 from udr.utils.udrUtils import Mini_Commands
 
 
@@ -38,6 +39,7 @@ class UdrParser:
             "system": CmdSystem(),
             "elite": CmdElite(),
             "log": CmdLog(),
+            "music": CmdMusic(),
             "clear": Mini_Commands("clear"),
             "pause": Mini_Commands("pause"),
         }
@@ -50,6 +52,7 @@ class UdrParser:
             "Used to run all system commands",
             "Used to run commands made for Elite80",
             "Used to write log entries",
+            "Used to run commands to do with music",
             "Clears the screen",
             "Pauses the program",
         ]

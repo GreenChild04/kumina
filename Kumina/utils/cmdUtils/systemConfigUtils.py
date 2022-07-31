@@ -16,7 +16,7 @@ class SystemConfigUtils:
     def systemPresetSet(self):
         systemPresets = {
             "CMD_NAME": "kumιɳα",
-            "CMD_VERSION": 2.6,
+            "CMD_VERSION": 2.7,
             "CRYPT_PASS": "kumιɳα%%!**&@",
             "LOG_LOC": "Log",
             "MUSIC_LOC": "Music",

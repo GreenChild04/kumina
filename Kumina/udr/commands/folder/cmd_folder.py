@@ -15,7 +15,7 @@ class CmdFolder:
             "help": FolderHelp(),
             "save": CmdStore(),
             "load": CmdLoad(),
-            "check": CmdCheck(),
+            "list": CmdCheck(),
             "remove": CmdRemove(),
             "eject": CmdEject(),
             "inject": CmdInject(),

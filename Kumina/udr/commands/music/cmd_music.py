@@ -70,12 +70,29 @@ class CmdAuto:
 
                 for i in shuffled:
                     try:
-                        print(f'Playing: [{i}]', end='\r')
-                        song = os.path.join(self.dirName, i)
-                        playsound(os.path.join(self.getDirName(), i))
                         message = f"Playing: [{i}]"
                         spaces = ' ' * (100 - len(message))
                         print(f"{message}{spaces}", end='\r')
+                        if os.name != "nt":
+                            playsound(os.path.join(self.getDirName(), i))
+                        else:
+                            def with_moviepy(filename):
+                                from moviepy.editor import VideoFileClip
+                                clip = VideoFileClip(filename)
+                                duration = clip.duration
+                                fps = clip.fps
+                                width, height = clip.size
+                                return duration
+                            dur = with_moviepy(os.path.join(self.getDirName(), i))
+                            webbrowser.open(os.path.join(self.getDirName(), i))
+                            print(dur)
+                            for a in range(dur.round()):
+                                time.sleep(1)
+                                message = f"Playing: [{i}] time:{a}/{dur.round()}"
+                                spaces = ' ' * (100 - len(message))
+                                print(f"{message}{spaces}", end='\r')
+
+
                     except:
                         pass
                 print()
