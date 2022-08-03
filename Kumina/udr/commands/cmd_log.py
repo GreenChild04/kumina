@@ -84,6 +84,7 @@ class CmdTLog:
 
         if self.entry.__contains__("~"):
             self.entry.strip("~")
+            self.conJ()
             if FileRead().checkFile():
                 self.old()
             else:
