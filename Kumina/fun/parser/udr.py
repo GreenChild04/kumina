@@ -11,6 +11,7 @@ from udr.commands.elite.cmd_elite import CmdElite
 from udr.commands.cmd_log import CmdLog
 from udr.commands.music.cmd_music import CmdMusic
 from udr.utils.udrUtils import Mini_Commands
+from udr.commands.script import CmdScript
 
 
 ##########################
@@ -42,6 +43,7 @@ class UdrParser:
             "music": CmdMusic(),
             "clear": Mini_Commands("clear"),
             "pause": Mini_Commands("pause"),
+            "script": CmdScript(),
         }
 
         details = [
@@ -55,6 +57,7 @@ class UdrParser:
             "Used to run commands to do with music",
             "Clears the screen",
             "Pauses the program",
+            "Used to run udr scripts and compiled udr scripts",
         ]
 
         self.helpMenu(cmdList, details)

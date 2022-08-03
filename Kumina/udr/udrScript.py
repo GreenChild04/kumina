@@ -1,3 +1,5 @@
+import sys
+
 from utils.cmdUtils.userKeyUtils import UserKeyUtils
 from menus.productLock import ProductLock
 from dataclasses import dataclass
@@ -17,9 +19,12 @@ class UdrScript:
         self.uku = None
 
     def run(self):
-        if self.script[0] == "#! /udr/script":
+        if self.script[0] == "#! /udr/auto":
             self.script = self.script[1:]
             USC(self.script, self.scriptN).compile(self.scriptN)
+        elif self.script[0] == "#! /udr/script":
+            self.script = self.script[1:]
+            USC(self.script, self.scriptN).runScript()
         elif self.scriptN.split(".")[1] == "cdn":
             USC(self.script, self.scriptN).readscript()
         else:
@@ -39,7 +44,7 @@ class USO:
         for i in self.script:
             parser = UdrParser(i, self.user, self.pwd)
             parser.run()
-        print(f"\n[Finished Script time:{time.time() - start}]")
+        print(f"\n[Finished Script time:({time.time() - start})]")
 
 
 class USC:
@@ -48,7 +53,7 @@ class USC:
         self.name = name
 
     def compile(self, name):
-        print("Enter Username and Password to Compile Script")
+        print("*Enter Username and Password to Compile*")
         user, pwd = ProductLock().userEnter()
         start = time.time()
         print("Compiling Script")
@@ -69,4 +74,10 @@ class USC:
         uso = pickle.loads(pikkled)
         print(f"Finished Reading Script: time[{time.time() - start}]")
         clear()
+        uso.runScript()
+
+    def runScript(self):
+        print("*Enter Username and Password to Run Script*")
+        user, pwd = ProductLock().userEnter()
+        uso = USO(self.script, user, pwd)
         uso.runScript()

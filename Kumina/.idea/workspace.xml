@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f58391c-d046-4428-802e-5807dfcc897d" name="Changes" comment="" />
+    <list default="true" id="7f58391c-d046-4428-802e-5807dfcc897d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/udr/commands/script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Kumina.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Kumina.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fun/parser/udr.py" beforeDir="false" afterPath="$PROJECT_DIR$/fun/parser/udr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udr/udrScript.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/udrScript.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/cmdUtils/systemConfigUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/cmdUtils/systemConfigUtils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kurrent/user/None/password" beforeDir="false" afterPath="$PROJECT_DIR$/../kurrent/user/None/password" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kurrent/user/None/salt" beforeDir="false" afterPath="$PROJECT_DIR$/../kurrent/user/None/salt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
