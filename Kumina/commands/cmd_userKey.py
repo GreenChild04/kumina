@@ -5,7 +5,6 @@ from utils.tond.dataUtils import DATA_UTILS
 from utils.cmdUtils.userKeyUtils import UserKeyUtils
 from pathlib import Path
 import utils.tond.Encryption as encryption
-import readchar
 import json
 import os
 from getpass import getpass
@@ -48,7 +47,7 @@ class Cmd_UserKey:
                 self.pog["INA"] = file.read_text()
             os.remove("activation.iac")
         except:
-            pass
+            self.pog["INA"] = None
 
         print()
 

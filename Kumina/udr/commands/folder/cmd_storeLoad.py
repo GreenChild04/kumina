@@ -49,7 +49,7 @@ class CmdStore:
 
             file.save(loc, isFile)
 
-            self.fu.save(peopleLoc, file, f"{self.uku.loadActivation()}`{pwd}")
+            self.fu.save(f"{peopleLoc}.udf", file, f"{self.uku.loadActivation()}`{pwd}")
         except Exception:
             print(f"ERROR: FILE '{loc}' NOT FOUND")
 
@@ -79,7 +79,7 @@ class CmdLoad:
 
     def fileLoad(self, loc, inter):
         try:
-            pikkled = self.fu.load(loc, f"{self.uku.loadActivation()}`{inter.pwd}")
+            pikkled = self.fu.load(f"{loc}.udf", f"{self.uku.loadActivation()}`{inter.pwd}")
             pikkled.load()
         except Exception as error:
             print(f"ERROR: FILE '{loc}' DOES NOT EXIST")
@@ -114,7 +114,7 @@ class CmdCheck:
             count = 0
             for i in contents:
                 count += 1
-                print(f"{count}. {i}")
+                print(f"{count}. {i.split('.')[0]}")
 
 
 class CmdRemove:
@@ -147,7 +147,7 @@ class CmdRemove:
         print("Removing File...")
         try:
             print(f"-removing [{files}]")
-            os.remove(os.path.join(self.dirName, files))
+            os.remove(os.path.join(self.dirName, f"{files}.udf"))
         except: pass
 
         print("Done!")
@@ -184,7 +184,7 @@ class CmdEject:
         print("Ejecting Files...")
         try:
             print(f"\n-ejecting [{files}]")
-            self.fu.jSave(files, f"{self.uku.loadActivation()}`{inter.pwd}", pwd)
+            self.fu.jSave(f"{files}.udf", f"{self.uku.loadActivation()}`{inter.pwd}", pwd)
 
 
         except: pass

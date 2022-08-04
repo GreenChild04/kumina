@@ -45,7 +45,7 @@ class FolderUtils:
         toString = self.fileToString(old_data)
         final = encryption.encryptData(toString, newPassword)
 
-        with Path(os.path.join(loc)) as file:
+        with Path(os.path.join(loc.split(".")[0])) as file:
             file.write_bytes(final)
 
     def jLoad(self, loc, password, newPassword):
@@ -55,7 +55,7 @@ class FolderUtils:
             decrypt = encryption.decryptData(password, file.read_bytes())
             data = decrypt
 
-        with Path(os.path.join(self.dirName, loc)) as file2:
+        with Path(os.path.join(self.dirName, f"{loc}.udf")) as file2:
             encrypt = encryption.encryptData(data, newPassword)
             file2.write_bytes(encrypt)
 
