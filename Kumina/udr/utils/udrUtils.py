@@ -1,5 +1,6 @@
 import sys
 from dataclasses import dataclass
+from utils.cmdUtils.systemConfigUtils import SystemConfigUtils
 import os
 import subprocess
 import base64
@@ -145,7 +146,6 @@ class HelpMenu:
         self.makeHelpMenu()
 
 
-
 @dataclass()
 class Dict3:
     key: list
@@ -212,3 +212,26 @@ class Mini_Commands:
                     os.system("PAUSE")
                 else:
                     os.system("read 'pog'")
+
+
+@dataclass()
+class ExterPackage:
+    utils: dict
+    inter: vars
+    pluginList: list
+
+    def runPlugins(self):
+        cmd = None
+
+        try:
+            a = self.inter.cmdDir[0]
+        except:
+            sys.exit()
+
+        if self.pluginList.__contains__(self.inter.cmdDir[0]):
+            cmd = os.path.join(os.getcwd(), SystemConfigUtils().load("PLUGINS_LOC"), self.inter.cmdDir[0])
+
+        if cmd:
+            cmd.run(self)
+        else:
+            print(f'(Error) Invalid Syntax: Plugin \'{self.inter.cmdDir[0]}\' not found')

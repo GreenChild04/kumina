@@ -12,6 +12,8 @@ from udr.commands.cmd_log import CmdLog
 from udr.commands.music.cmd_music import CmdMusic
 from udr.utils.udrUtils import Mini_Commands
 from udr.commands.script import CmdScript
+from udr.commands.cmd_python import CmdPython
+from udr.plugin import Plugin
 
 
 ##########################
@@ -44,6 +46,8 @@ class UdrParser:
             "clear": Mini_Commands("clear"),
             "pause": Mini_Commands("pause"),
             "script": CmdScript(),
+            "python": CmdPython(),
+            "plugin": Plugin(),
         }
 
         details = [
@@ -58,6 +62,8 @@ class UdrParser:
             "Clears the screen",
             "Pauses the program",
             "Used to run udr scripts and compiled udr scripts",
+            "Used to run python commands and files",
+            "Used to run user-made plugins for kumina",
         ]
 
         self.helpMenu(cmdList, details)

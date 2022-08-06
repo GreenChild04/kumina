@@ -1,10 +1,6 @@
 import sys, os
 
-sys.path.append(os.path.abspath('..'))
+def calculate():
+    print(bob.data)
 
-from requestil import RequestPackage
-
-
-class TestScript:
-    def run(self, interPackage, req):
-        print(req.test())
+calculate()

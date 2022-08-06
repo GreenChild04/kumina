@@ -16,13 +16,14 @@ class SystemConfigUtils:
     def systemPresetSet(self):
         systemPresets = {
             "CMD_NAME": "kumιɳα",
-            "CMD_VERSION": 2.8,
+            "CMD_VERSION": 2.9,
             "CRYPT_PASS": "kumιɳα%%!**&@",
             "LOG_LOC": "Log",
             "MUSIC_LOC": "Music",
             "VEX_LOC": "Vex",
             "STONKS_TMP": "__stonks__.tmp",
             "LOG_EXT": "log",
+            "PLUGINS_LOC": "plugins",
         }
         systemPresets["VEX.CODE_LOC"] = os.path.join(systemPresets["VEX_LOC"], "Code")
 

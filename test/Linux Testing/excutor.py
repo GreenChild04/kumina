@@ -1,10 +1,9 @@
 import shutil
-from multiprocessing import Process, Queue, Pipe
 import convScript
 from pathlib import Path
 import os
 from importlib import import_module
-from requestil import RequestPackage
+from dataclasses import dataclass
 
 
 class Excutor:
@@ -14,8 +13,6 @@ class Excutor:
 
     def run(self):
         self.getImport()
-        req = RequestPackage(self, self.testImp.TestScript(), None)
-        req.start()
         shutil.rmtree("tmp")
 
     def getImport(self):
@@ -26,14 +23,13 @@ class Excutor:
 
         os.makedirs("tmp")
 
-        with Path(path + ".py") as file:
-            file.write_text(script)
-
-        self.testImp = import_module("tmp.scripta")
-        self.testFun = self.testImp.TestScript().run
-
-    def testdata(self):
-        return "uwu"
+        exec(script, {"bob": Uwu("hello my name is Ethan Ma")})
 
 
-Excutor().run()
+@dataclass()
+class Uwu:
+    data: str
+
+
+if __name__ == "__main__":
+    Excutor().run()

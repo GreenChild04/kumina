@@ -90,10 +90,10 @@ class CmdCheck:
         self.fu = FolderUtils(None)
         self.uku = UserKeyUtils(None)
         self.dirName = self.fu.getDirName()
-        self.hm = HelpMenu("check", {}, [], [
+        self.hm = HelpMenu("list", {}, [], [
             "-",
-            "file.check",
-            "file.check: -h"
+            "file.list",
+            "file.list: -h"
         ])
 
     def run(self, interPackage):
