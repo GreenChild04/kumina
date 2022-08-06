@@ -3,7 +3,6 @@ import random
 import time
 from utils.cmdUtils.CommandUtils import HelpMenu
 import webbrowser
-from mutagen.mp3 import MP3
 from utils.cmdUtils.systemConfigUtils import SystemConfigUtils
 from playsound import playsound
 from pytube import Playlist
@@ -16,7 +15,7 @@ class CmdMusic:
             "help": MusicHelp(),
             "play": CmdPlay(),
             "auto": CmdAuto(),
-            "dPlaylist": CmdDownloadPlaylist(),
+            "playlist": CmdDownloadPlaylist(),
         }
         self.details = [
             "Used to create a help menu for the Music Command",
@@ -122,14 +121,20 @@ class CmdPlay:
 class CmdDownloadPlaylist:
     def __init__(self):
         self.dirName = self.getDirName()
+        self.hm = HelpMenu("playlist", helpInfo=[
+            "-",
+            "music.playlist: \"urlOfPlaylist\"",
+            "music.playlist: -h",
+        ])
 
     def run(self, interPackage):
-        if interPackage.syntax:
-            self.downloadMusic(interPackage.syntax[0])
+        if interPackage.isColon:
+            if interPackage.checkSwitch("h"):
+                self.hm.makeHelpInfo()
+            else:
+                self.downloadMusic(interPackage.inpit[0])
         else:
-            print("Write down the URL of the youtube playlist")
-            a = input(">")
-            self.downloadMusic(a)
+            self.hm.makeHelpInfo()
 
     def downloadMusic(self, playlistURL):
 

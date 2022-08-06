@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7f58391c-d046-4428-802e-5807dfcc897d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands/cmd_userKey.py" beforeDir="false" afterPath="$PROJECT_DIR$/commands/cmd_userKey.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udr/commands/folder/cmd_storeLoad.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/folder/cmd_storeLoad.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udr/utils/folderUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/utils/folderUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/user/GreenChild/dir/Diary" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/udr/commands/cmd_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/cmd_log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udr/commands/music/cmd_music.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/music/cmd_music.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kurrent/user/GreenChild/dir/Diary.udf" beforeDir="false" afterPath="$PROJECT_DIR$/../kurrent/user/GreenChild/dir/Diary.udf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../kurrent/user/None/system.config" beforeDir="false" afterPath="$PROJECT_DIR$/../kurrent/user/None/system.config" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

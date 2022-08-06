@@ -100,14 +100,14 @@ class CmdTLog:
         self.addLine(self.getDay())
         self.addLine("")
         self.addLine("-\n" + self.getTime() + "\n")
-        self.addLine(FileRead().loadTemp())
+        self.addLine(FileRead().loadTemp().strip("~"))
         self.addLine("-\n")
 
         FileRead().writeOnFile(self.finalText)
 
     def old(self):
         self.addLine("-\n" + self.getTime() + "\n")
-        self.addLine(FileRead().loadTemp())
+        self.addLine(FileRead().loadTemp().strip("~"))
         self.addLine("-\n")
 
         FileRead().writeOnFile(self.finalText)
@@ -117,6 +117,7 @@ class CmdTLog:
         pass
 
     def conJ(self):
+        self.entry.strip("~")
         current = FileRead().loadTemp() + self.entry.replace('`', '\n')
         FileRead().storeTemp(current)
 
