@@ -2,30 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f58391c-d046-4428-802e-5807dfcc897d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/udr/commands/cmd_python.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/udr/plugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wpis/Scripts/futurize.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wpis/Scripts/pasteurize.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wpis/Scripts/pyi-archive_viewer.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wpis/Scripts/pyi-bindepend.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wpis/Scripts/pyi-grab_version.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wpis/Scripts/pyi-makespec.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wpis/Scripts/pyi-set_version.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wpis/Scripts/pyinstaller.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Kumina.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Kumina.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fun/parser/udr.py" beforeDir="false" afterPath="$PROJECT_DIR$/fun/parser/udr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udr/commands/folder/cmd_storeLoad.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/commands/folder/cmd_storeLoad.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udr/plugin.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/plugin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/udr/utils/udrUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/udr/utils/udrUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/cmdUtils/systemConfigUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/cmdUtils/systemConfigUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/Linux Testing/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test/Linux Testing/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/Linux Testing/.idea/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../test/Linux Testing/.idea/test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/Linux Testing/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test/Linux Testing/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/Linux Testing/excutor.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test/Linux Testing/excutor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/Linux Testing/requestil.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/Linux Testing/scripta" beforeDir="false" afterPath="$PROJECT_DIR$/../test/Linux Testing/scripta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/Linux Testing/scripta.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test/Linux Testing/scripta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kurrent/script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kurrent/user/None/system.config" beforeDir="false" afterPath="$PROJECT_DIR$/../kurrent/user/None/system.config" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

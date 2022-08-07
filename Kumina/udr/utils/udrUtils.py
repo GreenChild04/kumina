@@ -2,6 +2,7 @@ import sys
 from dataclasses import dataclass
 from utils.cmdUtils.systemConfigUtils import SystemConfigUtils
 import os
+import udr.utils.convScript as convScript
 import subprocess
 import base64
 
@@ -219,6 +220,7 @@ class ExterPackage:
     utils: dict
     inter: vars
     pluginList: list
+    helpMenu: vars
 
     def runPlugins(self):
         cmd = None
@@ -230,8 +232,11 @@ class ExterPackage:
 
         if self.pluginList.__contains__(self.inter.cmdDir[0]):
             cmd = os.path.join(os.getcwd(), SystemConfigUtils().load("PLUGINS_LOC"), self.inter.cmdDir[0])
-
-        if cmd:
-            cmd.run(self)
+        if self.inter.cmdDir[0] == "help":
+            self.helpMenu.run(self.inter)
+        elif cmd:
+            contents = convScript.openFile(cmd)
+            script = convScript.from64(contents)
+            exec(script, {"exterPackage": self})
         else:
             print(f'(Error) Invalid Syntax: Plugin \'{self.inter.cmdDir[0]}\' not found')

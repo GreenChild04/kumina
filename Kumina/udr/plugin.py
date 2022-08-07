@@ -2,8 +2,8 @@ from dataclasses import dataclass
 from udr.utils.udrUtils import InterPackage
 import os
 from udr.utils.udrUtils import ExterPackage
-import udr.utils.convScript as convScript
 from utils.cmdUtils.systemConfigUtils import SystemConfigUtils
+from utils.cmdUtils.userKeyUtils import UserKeyUtils
 
 
 @dataclass()
@@ -95,7 +95,7 @@ class Plugin:
         except:
             pass
         self.contents = os.listdir(SystemConfigUtils().load("PLUGINS_LOC"))
-        self.exterPackage = ExterPackage({}, [])
+        self.exterPackage = ExterPackage({}, [], "", [])
         self.hm = HelpMenu("plugin", helpInfo=[
             "-",
             "plugin",
@@ -104,10 +104,11 @@ class Plugin:
 
     def run(self, interPackage):
         self.exterPackage = ExterPackage({
-            ""
-        }, interPackage)
+            "system": SystemConfigUtils(),
+            "userKey": UserKeyUtils(interPackage.user),
+        }, interPackage, self.contents, PluginHelp())
         if len(interPackage.cmdDir) > 0:
-            pass
+            self.exterPackage.runPlugins()
         else:
             if interPackage.checkSwitch("h"):
                 self.hm.makeHelpInfo()
