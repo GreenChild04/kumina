@@ -6,6 +6,7 @@ from menus.commandPromt.cmd_udr import Cmd_Udr
 from udr.udrLock.udrLock import UdrLock
 from udr.utils.udrUtils import clear
 from udr.udrScript import UdrScript
+import update
 from sys import *
 import fun.web.test
 import os
@@ -18,6 +19,14 @@ productLock = ProductLock()
 
 # Process
 def process():
+    clear()
+    if update.getLatestVersion(SystemConfigUtils().load("CMD_VERSION"))[0] and os.name == "nt":
+        print("*Warning, Kumina has a update available!*")
+        inpit = input("Do you want to install the new version of kumina (y/n)?: ")
+        if inpit == "y":
+            print()
+            update.run(SystemConfigUtils().load("CMD_VERSION"))
+    input()
     clear()
     try:
         a = argv[1]
