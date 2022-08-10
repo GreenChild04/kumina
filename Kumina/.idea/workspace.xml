@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f58391c-d046-4428-802e-5807dfcc897d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/update.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/Update Testing/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shell.py" beforeDir="false" afterPath="$PROJECT_DIR$/shell.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/Diary_Ethan.cdn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/user/GreenChild/dir/Diary.udf" beforeDir="false" afterPath="$PROJECT_DIR$/../kurrent/user/GreenChild/dir/Diary.udf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/user/GreenChild/dir/School.udf" beforeDir="false" afterPath="$PROJECT_DIR$/../kurrent/user/GreenChild/dir/School.udf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/user/None/password" beforeDir="false" afterPath="$PROJECT_DIR$/../kurrent/user/None/password" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/user/None/salt" beforeDir="false" afterPath="$PROJECT_DIR$/../kurrent/user/None/salt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/user/None/system.config" beforeDir="false" afterPath="$PROJECT_DIR$/../kurrent/user/None/system.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kurrent/user/None/user.key" beforeDir="false" afterPath="$PROJECT_DIR$/../kurrent/user/None/user.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/update.py" beforeDir="false" afterPath="$PROJECT_DIR$/update.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

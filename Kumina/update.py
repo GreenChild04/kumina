@@ -13,20 +13,21 @@ def getVersions():
 
 
 def getLatestVersion(currentVersion):
-    currentLink = None
-    currentLargest = float(currentVersion)
-    script = getVersions()
-    scList = script.split("\n")
-    for i in scList:
-        try:
-            version = float(i.split("~")[0])
-            link = i.split("~")[1]
-            if version > currentLargest:
-                currentLargest = version
-                currentLink = link
-        except:
-            pass
-
+    try:
+        currentLink = None
+        currentLargest = float(currentVersion)
+        script = getVersions()
+        scList = script.split("\n")
+        for i in scList:
+            try:
+                version = float(i.split("~")[0])
+                link = i.split("~")[1]
+                if version > currentLargest:
+                    currentLargest = version
+                    currentLink = link
+            except:
+                pass
+    except: pass
     if currentLink:
         return True, currentLink, currentLargest
     else:

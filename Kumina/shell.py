@@ -25,8 +25,9 @@ def process():
         inpit = input("Do you want to install the new version of kumina (y/n)?: ")
         if inpit == "y":
             print()
+            newVersion = update.getLatestVersion(SystemConfigUtils().load("CMD_VERSION"))[2]
+            SystemConfigUtils().save("CMD_VERSION", float(newVersion))
             update.run(SystemConfigUtils().load("CMD_VERSION"))
-    input()
     clear()
     try:
         a = argv[1]
