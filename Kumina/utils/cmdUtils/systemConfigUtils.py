@@ -16,7 +16,7 @@ class SystemConfigUtils:
     def systemPresetSet(self):
         systemPresets = {
             "CMD_NAME": "kumιɳα",
-            "CMD_VERSION": 3.1,
+            "CMD_VERSION": 3.3,
             "CRYPT_PASS": "kumιɳα%%!**&@",
             "LOG_LOC": "Log",
             "MUSIC_LOC": "Music",
@@ -61,6 +61,10 @@ class SystemConfigUtils:
             file.write(tempt)
 
     def load(self, loc):
+
+        if not os.path.isfile(self.fileName):
+            self.runSystemPresets()
+
         with open(self.fileName, 'r+') as file:
             decrypt = encryption.decryptData(self.systemPresets["CRYPT_PASS"], file.readlines(0)[0])
             a = str(self.dataUtils.loadFromJsonString(loc, decrypt))

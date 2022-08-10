@@ -43,7 +43,7 @@ def update(current):
 def run(current):
     print("Updating...")
     try:
-        os.remove("kumina.exe")
+        os.rename("kumina.exe", "kumina_old.exe")
     except:
         pass
     if getLatestVersion(current)[0]:

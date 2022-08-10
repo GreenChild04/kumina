@@ -26,8 +26,9 @@ def process():
         if inpit == "y":
             print()
             newVersion = update.getLatestVersion(SystemConfigUtils().load("CMD_VERSION"))[2]
-            SystemConfigUtils().save("CMD_VERSION", float(newVersion))
-            update.run(SystemConfigUtils().load("CMD_VERSION"))
+            oldVersion = SystemConfigUtils().load("CMD_VERSION")
+            SystemConfigUtils().save(float(newVersion), "CMD_VERSION")
+            update.run(oldVersion)
     clear()
     try:
         a = argv[1]
