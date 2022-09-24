@@ -96,6 +96,13 @@ class CmdTLog:
         else:
             self.conJ()
 
+    def makeTitle(self, title):
+        if "\\" in title:
+            tits = title.split("\\");
+            return f"{tits[0]}\n\n*{tits[1]}*\n\n";
+        else:
+            return title;
+
     def new(self):
         self.addLine(self.getDay())
         self.addLine("")
@@ -118,7 +125,7 @@ class CmdTLog:
 
     def conJ(self):
         self.entry.strip("~")
-        current = FileRead().loadTemp() + self.entry.replace('`', '\n')
+        current = self.makeTitle(FileRead().loadTemp() + self.entry.replace('`', '\n'))
         FileRead().storeTemp(current)
 
     def addLine(self, line):
