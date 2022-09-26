@@ -5,11 +5,11 @@ file.load: "Diary"
 clear
 print: "Welcome to Ethan's Diary Writer Script!"
 print: "Once you hit enter, you will be able to start writing a diary entry"
-pause
+python: "input('Press enter to continue...')"
 log
 clear
 print: "Now that you have finished your diary for today, you can hit enter to save and quit!"
-pause
+python: "input('Press enter to continue...')"
 clear
 file.save: -d "Diary" "Diary"
 system.edit: "LOG_LOC" "Log"
@@ -18,4 +18,4 @@ os: "rd /s /q Diary"
 os: "rm -rf Diary"
 clear
 print: "All that you have just written will be recorded and saved! You'll read over them in the future! =D"
-pause
+python: "input('Press enter to continue...')"

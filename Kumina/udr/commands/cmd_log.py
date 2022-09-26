@@ -99,7 +99,12 @@ class CmdTLog:
     def makeTitle(self, title):
         if "\\" in title:
             tits = title.split("\\");
-            return f"{tits[0]}\n\n*{tits[1]}*\n\n";
+            out = f"{tits[0]}\n\n{tits[1]}\n\n" if tits[1] != "" and tits[1] else f"{tits[0]}\n\n{tits[1]}\n";
+            count = 0;
+            for i in tits[2:]:
+                out += i if count < 1 else self.makeTitle(title.split("\\", count + 3)[1]);
+                count += 1;
+            return out;
         else:
             return title;
 
