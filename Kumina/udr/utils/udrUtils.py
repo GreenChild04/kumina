@@ -16,6 +16,7 @@ class InterPackage:
     inpit: list = None
     switch: dict = None
     pwd: str = None
+    cmdTrace = [];
 
     def runCommands(self):
         cmd = None
@@ -25,8 +26,12 @@ class InterPackage:
         except:
             sys.exit()
 
-        if self.cmdList.__contains__(self.cmdDir[0]):
-            cmd = self.cmdList[self.cmdDir.pop(0)]
+        self.cmdTrace.append(self.cmdDir.pop(0));
+
+        if self.cmdList.__contains__(self.cmdTrace[-1]):
+            cmd = self.cmdList[self.cmdTrace[-1]]
+        else:
+            pass
 
         if cmd:
             cmd.run(self)
@@ -41,9 +46,6 @@ class InterPackage:
         except:
             return False
         return False
-
-    def isColon(self):
-        return self.isColon
 
     def getValue(self, switch, index=0):
         if self.checkSwitch(switch) and self.switch[switch]:

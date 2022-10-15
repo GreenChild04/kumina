@@ -4,10 +4,10 @@ from dataclasses import dataclass
 
 @dataclass()
 class InterPackage:
-    cmdList: dict
-    cmdDir: list
-    user: str
-    syntax: list = None
+    cmdList: dict;
+    cmdDir: list;
+    user: str;
+    syntax: list = None;
 
     def runCommands(self):
         cmd = None
@@ -18,7 +18,7 @@ class InterPackage:
             sys.exit()
 
         if self.cmdList.__contains__(self.cmdDir[0]):
-            cmd = self.cmdList[self.cmdDir.pop(0)]
+            cmd = self.cmdList[self.cmdDir.pop(0)];
 
         if cmd:
             cmd.run(self)
@@ -46,6 +46,13 @@ class HelpMenu:
     def run(self, interPackage):
         self.makeHelpMenu()
 
+
+@dataclass()
+class Lambda:
+    cmd: str
+
+    def run(self):
+        exec("cmd");
 
 
 @dataclass()
